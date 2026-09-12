@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="sl"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://sauperl-rt.vercel.app/dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<title>Transport Šauperl – cestni prevoz tovora, Benedikt</title>
+<meta name="description" content="Avtoprevozništvo Šauperl d.o.o. – družinski cestni prevoznik iz Benedikta od 1991. Prevoz bivalnih enot in tovora z odprtimi vozili, vozili s ponjavo in izrednimi transporti po EU, Veliki Britaniji, Švici in zahodnem Balkanu.">
+<link rel="canonical" href="https://sauperl.com/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Transport Šauperl">
+<meta property="og:title" content="Transport Šauperl – cestni prevoz tovora, Benedikt">
+<meta property="og:description" content="Družinski cestni prevoznik iz Benedikta od 1991. Prevoz bivalnih enot in tovora po EU, Veliki Britaniji, Švici in zahodnem Balkanu.">
+<meta property="og:url" content="https://sauperl.com/">
+<meta property="og:image" content="https://sauperl.com/assets/apple-touch-icon.png">
+<meta property="og:locale" content="sl_SI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Transport Šauperl – cestni prevoz tovora, Benedikt">
+<meta name="twitter:description" content="Družinski cestni prevoznik iz Benedikta od 1991. Prevoz bivalnih enot in tovora po EU, Veliki Britaniji, Švici in zahodnem Balkanu.">
+<meta name="twitter:image" content="https://sauperl.com/assets/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Avtoprevozništvo Šauperl, trgovina in storitve d.o.o.",
+  "alternateName": "Transport Šauperl",
+  "url": "https://sauperl.com/",
+  "logo": "https://sauperl.com/assets/apple-touch-icon.png",
+  "image": "https://sauperl.com/assets/apple-touch-icon.png",
+  "telephone": "+386 2 703 12 62",
+  "email": "sautrans@gmail.com",
+  "vatID": "SI35507233",
+  "foundingDate": "1991-04-15",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Industrijska cesta 5",
+    "addressLocality": "Benedikt",
+    "postalCode": "2234",
+    "addressCountry": "SI"
+  },
+  "areaServed": ["SI","DE","AT","IT","FR","BE","NL","CH","GB","CZ","ES","HU"],
+  "sameAs": []
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="/assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="/assets/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<style>
+body { margin: 0; background: #f5f1ec; font-family: 'Barlow', sans-serif; }
+* { box-sizing: border-box; }
+::selection { background: #1e8e4f; color: #fff; }
+a { color: #1e8e4f; }
+a:hover { color: #156b3a; }
+button { font-family: inherit; cursor: pointer; }
+input, textarea, select { font-family: inherit; }
+@media (prefers-reduced-motion: reduce) { *{ animation: none !important; transition: none !important; } }
+::placeholder { color: #9a9089; }
+.sp-desktop-nav { display: flex; }
+.sp-menu-btn { display: none; }
+.sp-mobile-cta { display: none; }
+@media (max-width: 880px) {
+.sp-desktop-nav { display: none; }
+.sp-menu-btn { display: block; }
+.sp-header-cta { display: none; }
+.sp-grid-2 { grid-template-columns: 1fr !important; }
+.sp-mobile-cta { display: flex; }
+body { padding-bottom: 64px; }
+}
+</style>
+</helmet>
+
+<div style="min-height:100vh;display:flex;flex-direction:column;color:#1a1a1a">
+
+<!-- HEADER -->
+<header style="position:sticky;top:0;z-index:50;background:#1a1a1a;border-bottom:3px solid #1e8e4f">
+<div style="max-width:1200px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<button sc-camel-on-click="{{ goHome }}" aria-label="Šauperl – domov" style="background:none;border:none;padding:0;display:flex;flex-direction:column;align-items:flex-start;gap:2px">
+<span style="font-family:'Barlow',sans-serif;font-weight:600;font-size:10px;letter-spacing:3px;color:#8fc7a3;text-transform:uppercase">Transport</span>
+<span style="display:flex;align-items:center;gap:8px">
+<span style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(22px,3vw,30px);color:#f5f1ec;letter-spacing:0.5px;line-height:1">ŠAUPERL</span>
+</span>
+<span style="width:100%;height:4px;background:#1e8e4f;position:relative;border-radius:2px;overflow:hidden"><span style="position:absolute;left:38%;width:16%;height:100%;background:#1a1a1a"></span></span>
+</button>
+
+<nav aria-label="Glavna navigacija" class="sp-desktop-nav" style="align-items:center;gap:4px">
+<sc-for list="{{ navItems }}" as="item" hint-placeholder-count="6">
+<button sc-camel-on-click="{{ item.onClick }}" aria-current="{{ item.current }}" style="background:none;border:none;color:{{ item.color }};font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.3px;text-transform:uppercase;padding:10px 12px;border-bottom:2px solid {{ item.underline }}">{{ item.label }}</button>
+</sc-for>
+</nav>
+
+<div style="display:flex;align-items:center;gap:10px">
+<div role="group" aria-label="Jezik" style="display:flex;border:1px solid #3a3a3a;border-radius:6px;overflow:hidden">
+<sc-for list="{{ langItems }}" as="l" hint-placeholder-count="3">
+<button sc-camel-on-click="{{ l.onClick }}" aria-pressed="{{ l.active }}" style="background:{{ l.bg }};color:{{ l.color }};border:none;padding:7px 10px;font-size:13px;font-weight:700;font-family:'Barlow Condensed',sans-serif">{{ l.label }}</button>
+</sc-for>
+</div>
+<button sc-camel-on-click="{{ goContact }}" class="sp-header-cta" style="background:#1e8e4f;color:#fff;border:none;padding:10px 18px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;letter-spacing:0.3px;text-transform:uppercase">{{ T.header.cta }}</button>
+<button sc-camel-on-click="{{ toggleMenu }}" aria-label="Meni" aria-expanded="{{ menuOpen }}" class="sp-menu-btn" style="background:none;border:none;color:#f5f1ec;padding:6px">
+<svg width="26" height="26" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+</button>
+</div>
+</div>
+
+<sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
+<nav aria-label="Mobilna navigacija" style="display:flex;flex-direction:column;padding:8px 20px 18px;background:#1a1a1a">
+<sc-for list="{{ navItems }}" as="item" hint-placeholder-count="6">
+<button sc-camel-on-click="{{ item.onClick }}" style="background:none;border:none;text-align:left;color:{{ item.color }};font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;padding:12px 4px;border-bottom:1px solid #333">{{ item.label }}</button>
+</sc-for>
+<button sc-camel-on-click="{{ goContact }}" style="margin-top:14px;background:#1e8e4f;color:#fff;border:none;padding:14px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;text-transform:uppercase">{{ T.header.cta }}</button>
+</nav>
+</sc-if>
+</header>
+
+<main style="flex:1">
+
+<!-- HOME -->
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(50px,10vw,110px) 20px;position:relative;overflow:hidden">
+<div style="max-width:1200px;margin:0 auto;position:relative;z-index:1">
+<div style="max-width:680px">
+<p style="font-family:'Barlow Condensed',sans-serif;color:#1e8e4f;font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:14px;margin:0 0 14px">{{ T.home.kicker }}</p>
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(36px,6vw,68px);line-height:1.02;margin:0 0 22px;text-wrap:pretty">{{ T.home.heroTitle }}</h1>
+<p style="font-size:clamp(17px,2vw,20px);line-height:1.6;color:#d8d2ca;margin:0 0 32px;max-width:560px">{{ T.home.heroSub }}</p>
+<div style="display:flex;gap:14px;flex-wrap:wrap">
+<button sc-camel-on-click="{{ goContact }}" style="background:#1e8e4f;color:#fff;border:none;padding:16px 30px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;text-transform:uppercase">{{ T.home.heroCta }}</button>
+<button sc-camel-on-click="{{ goServices }}" style="background:none;color:#f5f1ec;border:1px solid #4a4a4a;padding:16px 30px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;text-transform:uppercase">{{ T.home.heroCta2 }}</button>
+</div>
+</div>
+</div>
+<div aria-hidden="true" style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,#242424 0px,#242424 2px,transparent 2px,transparent 46px);opacity:0.5"></div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(36px,6vw,60px) 20px">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px">
+<sc-for list="{{ T.home.trust }}" as="pt" hint-placeholder-count="3">
+<div style="background:#fff;border:1px solid #e5ddd2;border-left:4px solid #1e8e4f;padding:24px">
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:21px;margin:0 0 8px">{{ pt.title }}</h3>
+<p style="margin:0;color:#4a463f;line-height:1.5;font-size:15px">{{ pt.desc }}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="padding:clamp(50px,8vw,90px) 20px">
+<div style="max-width:1200px;margin:0 auto">
+<div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:32px">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0">{{ T.home.servicesTitle }}</h2>
+<button sc-camel-on-click="{{ goServices }}" style="background:none;border:none;color:#1e8e4f;font-weight:700;font-family:'Barlow Condensed',sans-serif;font-size:17px;text-transform:uppercase">{{ T.home.servicesLink }} →</button>
+</div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+<sc-for list="{{ T.services.cards }}" as="c" hint-placeholder-count="5">
+<div style="border:1px solid #e5ddd2;padding:22px;background:#fff">
+<div style="width:40px;height:40px;background:#1a1a1a;border-radius:6px;display:flex;align-items:center;justify-content:center;margin-bottom:14px">
+<svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="#1e8e4f" stroke-width="2"><rect x="3" y="9" width="12" height="9"></rect><path d="M15 12h4l2 3v3h-6z"></path><circle cx="7.5" cy="20" r="1.6"></circle><circle cx="17.5" cy="20" r="1.6"></circle></svg>
+</div>
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:19px;margin:0 0 8px">{{ c.title }}</h3>
+<p style="margin:0;color:#4a463f;font-size:14px;line-height:1.5">{{ c.desc }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="background:#242424;color:#f5f1ec;padding:clamp(50px,8vw,90px) 20px">
+<div class="sp-grid-2" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center">
+<div>
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(26px,4vw,38px);margin:0 0 16px">{{ T.home.coverageTitle }}</h2>
+<p style="color:#d8d2ca;line-height:1.6;font-size:16px;margin:0 0 20px">{{ T.home.coverageText }}</p>
+<button sc-camel-on-click="{{ goCoverage }}" style="background:none;border:1px solid #5a5a5a;color:#f5f1ec;padding:12px 22px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase">{{ T.home.coverageLink }}</button>
+</div>
+<div>
+<iframe src="/map.html" title="Zemljevid področja poslovanja" style="width:100%;height:320px;border:0;display:block"></iframe>
+</div>
+</div>
+</section>
+
+<section style="background:#1e8e4f;padding:clamp(44px,7vw,74px) 20px">
+<div style="max-width:800px;margin:0 auto;text-align:center;color:#fff">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0 0 14px">{{ T.home.ctaTitle }}</h2>
+<p style="font-size:17px;line-height:1.5;margin:0 0 26px;opacity:0.95">{{ T.home.ctaText }}</p>
+<button sc-camel-on-click="{{ goContact }}" style="background:#1a1a1a;color:#fff;border:none;padding:16px 34px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;text-transform:uppercase">{{ T.home.ctaButton }}</button>
+</div>
+</section>
+</sc-if>
+
+<!-- SERVICES -->
+<sc-if value="{{ isServices }}" hint-placeholder-val="{{ false }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(44px,7vw,80px) 20px">
+<div style="max-width:1200px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,5vw,54px);margin:0 0 16px">{{ T.services.title }}</h1>
+<p style="max-width:640px;color:#d8d2ca;font-size:17px;line-height:1.6;margin:0">{{ T.services.intro }}</p>
+</div>
+</section>
+<section style="padding:clamp(40px,7vw,80px) 20px">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+<sc-for list="{{ T.services.cards }}" as="c" hint-placeholder-count="5">
+<div style="border:1px solid #e5ddd2;background:#fff;padding:28px">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;margin:0 0 10px;color:#1a1a1a">{{ c.title }}</h2>
+<p style="margin:0;color:#4a463f;font-size:15px;line-height:1.6">{{ c.desc }}</p>
+</div>
+</sc-for>
+</div>
+</section>
+</sc-if>
+
+<!-- FLEET -->
+<sc-if value="{{ isFleet }}" hint-placeholder-val="{{ false }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(44px,7vw,80px) 20px">
+<div style="max-width:1200px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,5vw,54px);margin:0 0 16px">{{ T.fleet.title }}</h1>
+<p style="max-width:640px;color:#d8d2ca;font-size:17px;line-height:1.6;margin:0 0 30px">{{ T.fleet.intro }}</p>
+<div style="display:flex;gap:32px;flex-wrap:wrap">
+<sc-for list="{{ T.fleet.stats }}" as="s" hint-placeholder-count="3">
+<div>
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:44px;color:#1e8e4f">{{ s.value }}</div>
+<div style="font-size:14px;color:#c9c3ba">{{ s.label }}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+<section style="padding:clamp(40px,7vw,70px) 20px">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px">
+<sc-for list="{{ fleetTrucks }}" as="tr" hint-placeholder-count="8">
+<div>
+<sc-if value="{{ tr.photo }}" hint-placeholder-val="{{ false }}">
+<img src="{{ tr.photo }}" alt="{{ tr.label }}" style="aspect-ratio:4/3;width:100%;object-fit:cover;border-radius:2px;display:block;border:1px solid #d8cfc0">
+</sc-if>
+<sc-if value="{{ !tr.photo }}" hint-placeholder-val="{{ true }}">
+<div style="aspect-ratio:4/3;background:repeating-linear-gradient(45deg,#e5ddd2,#e5ddd2 10px,#ded5c8 10px,#ded5c8 20px);border:1px solid #d8cfc0;display:flex;align-items:center;justify-content:center;text-align:center;padding:10px">
+<span style="font-family:monospace;font-size:12px;color:#6b6459">{{ tr.placeholder }}</span>
+</div>
+</sc-if>
+<p style="margin:8px 0 0;font-size:13px;color:#4a463f;font-family:'Barlow Condensed',sans-serif;font-weight:600">{{ tr.label }}</p>
+</div>
+</sc-for>
+</div>
+<p style="max-width:1200px;margin:26px auto 0;color:#6b6459;font-size:14px">{{ T.fleet.note }}</p>
+</section>
+</sc-if>
+
+<!-- COVERAGE -->
+<sc-if value="{{ isCoverage }}" hint-placeholder-val="{{ false }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(44px,7vw,80px) 20px">
+<div style="max-width:1200px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,5vw,54px);margin:0 0 16px">{{ T.coverage.title }}</h1>
+<p style="max-width:680px;color:#d8d2ca;font-size:17px;line-height:1.6;margin:0 0 30px">{{ T.coverage.intro }}</p>
+<div style="display:flex;gap:32px;flex-wrap:wrap">
+<sc-for list="{{ T.coverage.stats }}" as="cs" hint-placeholder-count="3">
+<div>
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:38px;color:#1e8e4f">{{ cs.value }}</div>
+<div style="font-size:14px;color:#c9c3ba">{{ cs.label }}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:1000px;margin:0 auto">
+<iframe src="/map.html" title="Zemljevid področja poslovanja" style="width:100%;height:420px;border:0;display:block"></iframe>
+<div style="display:flex;gap:16px;flex-wrap:wrap;margin:22px 0;font-size:14px">
+<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:14px;background:#1e8e4f;display:inline-block;border-radius:2px"></span>{{ T.coverage.legendHome }}</span>
+<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:14px;background:#8fc7a3;display:inline-block;border-radius:2px"></span>{{ T.coverage.legendEu }}</span>
+<span style="display:flex;align-items:center;gap:6px"><span style="width:14px;height:14px;background:#c9c3ba;display:inline-block;border-radius:2px"></span>{{ T.coverage.legendOther }}</span>
+</div>
+</div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:1000px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 24px">{{ T.coverage.regionsTitle }}</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+<sc-for list="{{ T.coverage.regions }}" as="rg" hint-placeholder-count="4">
+<div style="background:#fff;border:1px solid #e5ddd2;border-left:4px solid #1e8e4f;padding:22px">
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;margin:0 0 8px">{{ rg.title }}</h3>
+<p style="margin:0 0 10px;font-size:14px;color:#6b6459;font-weight:600">{{ rg.countries }}</p>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#4a463f">{{ rg.text }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:1000px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 10px">{{ T.coverage.docsTitle }}</h2>
+<p style="font-size:14px;color:#6b6459;margin:0 0 20px">{{ T.coverage.docsIntro }}</p>
+<div style="border:1px solid #e5ddd2">
+<sc-for list="{{ T.coverage.docs }}" as="dc" hint-placeholder-count="4">
+<div style="display:grid;grid-template-columns:110px 1fr;gap:16px;padding:14px 18px;border-bottom:1px solid #e5ddd2">
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;color:#1e8e4f;font-size:15px">{{ dc.term }}</div>
+<div style="font-size:14px;color:#4a463f;line-height:1.5">{{ dc.desc }}</div>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:1000px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 8px">{{ T.coverage.concernsTitle }}</h2>
+<p style="font-size:14px;color:#6b6459;margin:0 0 24px">{{ T.coverage.concernsIntro }}</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+<sc-for list="{{ T.coverage.concerns }}" as="cn" hint-placeholder-count="5">
+<div style="background:#fff;border:1px solid #e5ddd2;padding:18px 20px">
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;margin:0 0 8px;color:#1a1a1a">{{ cn.q }}</h3>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#4a463f">{{ cn.a }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="background:#242424;padding:clamp(36px,6vw,56px) 20px">
+<div style="max-width:800px;margin:0 auto;text-align:center">
+<p style="color:#f5f1ec;font-size:17px;line-height:1.6;margin:0 0 22px">{{ T.coverage.note }}</p>
+<button sc-camel-on-click="{{ goContact }}" style="background:#1e8e4f;color:#fff;border:none;padding:14px 28px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;text-transform:uppercase">{{ T.coverage.cta }}</button>
+</div>
+</section>
+</sc-if>
+
+<!-- ABOUT -->
+<sc-if value="{{ isAbout }}" hint-placeholder-val="{{ false }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(44px,7vw,80px) 20px">
+<div style="max-width:900px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(30px,4.6vw,46px);margin:0 0 18px;text-wrap:pretty">{{ T.about.hook }}</h1>
+<p style="font-size:clamp(16px,2vw,19px);line-height:1.7;color:#d8d2ca;margin:0">{{ T.about.intro }}</p>
+</div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:800px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 12px">{{ T.about.visionTitle }}</h2>
+<p style="font-size:17px;line-height:1.7;color:#3a362f;margin:0 0 32px">{{ T.about.vision }}</p>
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 18px">{{ T.about.valuesTitle }}</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px">
+<sc-for list="{{ T.about.values }}" as="vl" hint-placeholder-count="4">
+<div style="background:#fff;border:1px solid #e5ddd2;border-left:4px solid #1e8e4f;padding:18px">
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;margin:0 0 6px">{{ vl.title }}</h3>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#4a463f">{{ vl.text }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:800px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 24px">{{ T.about.timelineTitle }}</h2>
+<div style="display:flex;flex-direction:column;gap:0">
+<sc-for list="{{ T.about.timeline }}" as="tl" hint-placeholder-count="4">
+<div style="display:grid;grid-template-columns:90px 1fr;gap:18px;padding:16px 0;border-bottom:1px solid #e5ddd2">
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;color:#1e8e4f">{{ tl.year }}</div>
+<p style="margin:0;font-size:15px;line-height:1.6;color:#3a362f">{{ tl.text }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:800px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 12px">{{ T.about.whatTitle }}</h2>
+<p style="font-size:15px;line-height:1.6;color:#3a362f;margin:0 0 18px">{{ T.about.whatIntro }}</p>
+<ul style="margin:0;padding-left:20px;color:#3a362f;font-size:15px;line-height:1.9">
+<sc-for list="{{ T.about.what }}" as="w" hint-placeholder-count="4"><li>{{ w }}</li></sc-for>
+</ul>
+</div>
+</section>
+
+<section style="padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:800px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 12px">{{ T.about.whereTitle }}</h2>
+<p style="font-size:15px;line-height:1.6;color:#3a362f;margin:0 0 20px">{{ T.about.whereIntro }}</p>
+<div style="display:flex;flex-direction:column;gap:14px;margin-bottom:20px">
+<sc-for list="{{ T.about.where }}" as="wh" hint-placeholder-count="3">
+<div style="border:1px solid #e5ddd2;border-left:4px solid #1e8e4f;padding:16px 20px;background:#fff">
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;margin:0 0 6px">{{ wh.title }}</h3>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#4a463f">{{ wh.text }}</p>
+</div>
+</sc-for>
+</div>
+<p style="font-size:14px;color:#6b6459;margin:0;font-style:italic">{{ T.about.whereNote }}</p>
+</div>
+</section>
+
+<section style="background:#242424;color:#f5f1ec;padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:900px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 24px">{{ T.about.stepsTitle }}</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:20px">
+<sc-for list="{{ T.about.steps }}" as="st" hint-placeholder-count="4">
+<div>
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:30px;color:#1e8e4f;margin-bottom:8px">{{ st.n }}</div>
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;margin:0 0 6px">{{ st.title }}</h3>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#c9c3ba">{{ st.text }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="padding:clamp(40px,7vw,64px) 20px">
+<div style="max-width:800px;margin:0 auto">
+<blockquote style="border-left:4px solid #1e8e4f;padding:6px 0 6px 22px;margin:0 0 40px">
+<p style="font-family:'Barlow Condensed',sans-serif;font-size:22px;font-style:italic;margin:0 0 8px;color:#1a1a1a">"{{ T.about.quote }}"</p>
+<cite style="font-size:14px;color:#6b6459;font-style:normal">{{ T.about.quoteAuthor }}</cite>
+</blockquote>
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 8px">{{ T.about.teamTitle }}</h2>
+<p style="font-size:15px;line-height:1.6;color:#3a362f;margin:0 0 20px">{{ T.about.teamIntro }}</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:16px;margin-bottom:40px">
+<sc-for list="{{ T.about.team }}" as="m" hint-placeholder-count="4">
+<div style="border:1px solid #e5ddd2;padding:18px;text-align:center;background:#fff">
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:19px;color:#1e8e4f;margin-bottom:4px">{{ m.count }}</div>
+<div style="font-size:14px;color:#4a463f">{{ m.role }}</div>
+</div>
+</sc-for>
+</div>
+
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 12px">{{ T.about.forwardTitle }}</h2>
+<p style="font-size:15px;line-height:1.7;color:#3a362f;margin:0 0 40px">{{ T.about.forward }}</p>
+
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:24px;margin:0 0 18px">{{ T.about.numbersTitle }}</h2>
+<div style="border:1px solid #e5ddd2;margin-bottom:40px">
+<sc-for list="{{ T.about.numbers }}" as="nb" hint-placeholder-count="8">
+<div style="display:flex;justify-content:space-between;gap:12px;padding:12px 18px;border-bottom:1px solid #e5ddd2;font-size:14px">
+<span style="color:#6b6459">{{ nb.label }}</span>
+<span style="font-weight:700;color:#1a1a1a;text-align:right">{{ nb.value }}</span>
+</div>
+</sc-for>
+</div>
+
+<p style="font-size:17px;line-height:1.7;color:#3a362f;margin:0 0 24px">{{ T.about.closing }}</p>
+<button sc-camel-on-click="{{ goContact }}" style="background:#1e8e4f;color:#fff;border:none;padding:16px 30px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;text-transform:uppercase">{{ T.about.closingCta }}</button>
+</div>
+</section>
+</sc-if>
+
+<!-- CAREERS -->
+<sc-if value="{{ isCareers }}" hint-placeholder-val="{{ false }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(44px,7vw,80px) 20px">
+<div style="max-width:1200px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,5vw,54px);margin:0 0 16px;text-wrap:pretty">{{ T.careers.title }}</h1>
+<p style="max-width:640px;color:#d8d2ca;font-size:17px;line-height:1.6;margin:0">{{ T.careers.intro }}</p>
+</div>
+</section>
+
+<section style="padding:clamp(36px,6vw,56px) 20px">
+<div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px">
+<sc-for list="{{ T.careers.why }}" as="wy" hint-placeholder-count="4">
+<div style="background:#fff;border:1px solid #e5ddd2;border-left:4px solid #1e8e4f;padding:20px">
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:17px;margin:0 0 8px">{{ wy.title }}</h3>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#4a463f">{{ wy.text }}</p>
+</div>
+</sc-for>
+</div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(36px,6vw,56px) 20px">
+<div style="max-width:800px;margin:0 auto">
+<blockquote style="border-left:4px solid #1e8e4f;padding:6px 0 6px 22px;margin:0">
+<p style="font-family:'Barlow Condensed',sans-serif;font-size:21px;font-style:italic;margin:0 0 8px;color:#1a1a1a">"{{ T.careers.quote }}"</p>
+<cite style="font-size:14px;color:#6b6459;font-style:normal">{{ T.careers.quoteAuthor }}</cite>
+</blockquote>
+</div>
+</section>
+
+<section style="padding:clamp(36px,6vw,56px) 20px">
+<div style="max-width:1000px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;margin:0 0 24px">{{ T.careers.processTitle }}</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px">
+<sc-for list="{{ T.careers.process }}" as="pc" hint-placeholder-count="3">
+<div>
+<div style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:28px;color:#1e8e4f;margin-bottom:6px">{{ pc.n }}</div>
+<h3 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;margin:0 0 6px">{{ pc.title }}</h3>
+<p style="margin:0;font-size:14px;line-height:1.6;color:#4a463f">{{ pc.text }}</p>
+</div>
+</sc-for>
+</div>
+</div>
+</section>
+
+<section style="background:#f5f1ec;padding:clamp(36px,6vw,56px) 20px">
+<div style="max-width:1000px;margin:0 auto">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;margin:0 0 8px">{{ T.careers.interviewTitle }}</h2>
+<p style="font-size:15px;color:#4a463f;margin:0 0 20px">{{ T.careers.interviewIntro }}</p>
+<ul style="margin:0;padding-left:20px;color:#3a362f;font-size:15px;line-height:1.9">
+<sc-for list="{{ T.careers.interview }}" as="iv" hint-placeholder-count="5"><li>{{ iv }}</li></sc-for>
+</ul>
+</div>
+</section>
+
+<section style="background:#fff;padding:clamp(40px,7vw,70px) 20px">
+<div class="sp-grid-2" style="max-width:1000px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:40px">
+<div>
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;margin:0 0 14px">{{ T.careers.offerTitle }}</h2>
+<ul style="margin:0 0 30px;padding-left:20px;color:#3a362f;font-size:15px;line-height:1.8">
+<sc-for list="{{ T.careers.offer }}" as="o" hint-placeholder-count="4"><li>{{ o }}</li></sc-for>
+</ul>
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:22px;margin:0 0 14px">{{ T.careers.reqTitle }}</h2>
+<ul style="margin:0;padding-left:20px;color:#3a362f;font-size:15px;line-height:1.8">
+<sc-for list="{{ T.careers.req }}" as="r" hint-placeholder-count="4"><li>{{ r }}</li></sc-for>
+</ul>
+</div>
+<div>
+<sc-if value="{{ careerSubmitted }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border:1px solid #e5ddd2;border-left:4px solid #2f7a3d;padding:24px">
+<p style="margin:0;font-weight:600;color:#1a1a1a">{{ T.careers.success }}</p>
+</div>
+</sc-if>
+<sc-if value="{{ careerFormVisible }}" hint-placeholder-val="{{ true }}">
+<form sc-camel-on-submit="{{ onCareerSubmit }}" style="background:#fff;border:1px solid #e5ddd2;padding:24px;display:flex;flex-direction:column;gap:14px">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;margin:0">{{ T.careers.formTitle }}</h2>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="k-name">{{ T.careers.fName }} *</label>
+<input id="k-name" name="ime" required="{{ true }}" value="{{ kForm.ime }}" sc-camel-on-change="{{ onCareerChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="k-phone">{{ T.careers.fPhone }} *</label>
+<input id="k-phone" name="telefon" type="tel" required="{{ true }}" value="{{ kForm.telefon }}" sc-camel-on-change="{{ onCareerChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="k-email">{{ T.careers.fEmail }} *</label>
+<input id="k-email" name="eposta" type="email" required="{{ true }}" value="{{ kForm.eposta }}" sc-camel-on-change="{{ onCareerChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="k-exp">{{ T.careers.fExp }}</label>
+<textarea id="k-exp" name="izkusnje" rows="3" value="{{ kForm.izkusnje }}" sc-camel-on-change="{{ onCareerChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px;resize:vertical"></textarea>
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="k-cv">{{ T.careers.fCv }}</label>
+<input id="k-cv" name="cv" type="file" sc-camel-on-change="{{ onCvChange }}" style="width:100%;font-size:14px">
+<sc-if value="{{ kCvName }}" hint-placeholder-val="{{ false }}"><p style="margin:6px 0 0;font-size:13px;color:#4a463f">{{ kCvName }}</p></sc-if>
+</div>
+<input type="text" name="_gotcha" value="{{ kForm.gotcha }}" sc-camel-on-change="{{ onCareerChange }}" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
+<label style="display:flex;align-items:flex-start;gap:9px;font-size:13px;line-height:1.5;color:#3a362f" for="k-consent">
+<input id="k-consent" name="soglasje" type="checkbox" required="{{ true }}" checked="{{ kForm.soglasje }}" sc-camel-on-change="{{ onCareerChange }}" style="margin-top:3px">
+<span>{{ T.careers.consentLabel }} <button type="button" sc-camel-on-click="{{ goPrivacy }}" style="background:none;border:none;padding:0;color:#1e8e4f;text-decoration:underline;font-size:13px;cursor:pointer">{{ T.careers.consentLink }}</button>. *</span>
+</label>
+<sc-if value="{{ kError }}" hint-placeholder-val="{{ false }}"><p style="color:#b3261e;font-size:13px;margin:0">{{ kError }}</p></sc-if>
+<button type="submit" disabled="{{ careerSending }}" style="background:#1e8e4f;color:#fff;border:none;padding:14px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;text-transform:uppercase;margin-top:6px">{{ careerSubmitLabel }}</button>
+<p style="font-size:12px;color:#9a9089;margin:0">{{ T.careers.endpointNote }}</p>
+</form>
+</sc-if>
+</div>
+</div>
+</section>
+</sc-if>
+
+<!-- CONTACT -->
+<sc-if value="{{ isContact }}" hint-placeholder-val="{{ false }}">
+<section style="background:#1a1a1a;color:#f5f1ec;padding:clamp(44px,7vw,80px) 20px">
+<div style="max-width:1200px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(32px,5vw,54px);margin:0 0 16px">{{ T.contact.title }}</h1>
+<p style="max-width:640px;color:#d8d2ca;font-size:17px;line-height:1.6;margin:0">{{ T.contact.intro }}</p>
+</div>
+</section>
+<section style="padding:clamp(40px,7vw,70px) 20px">
+<div class="sp-grid-2" style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:40px">
+<div>
+<sc-if value="{{ contactSubmitted }}" hint-placeholder-val="{{ false }}">
+<div style="background:#fff;border:1px solid #e5ddd2;border-left:4px solid #2f7a3d;padding:24px">
+<p style="margin:0;font-weight:600">{{ T.contact.success }}</p>
+</div>
+</sc-if>
+<sc-if value="{{ contactFormVisible }}" hint-placeholder-val="{{ true }}">
+<form sc-camel-on-submit="{{ onContactSubmit }}" style="background:#fff;border:1px solid #e5ddd2;padding:26px;display:flex;flex-direction:column;gap:14px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-name">{{ T.contact.fName }} *</label>
+<input id="c-name" name="ime" required="{{ true }}" value="{{ cForm.ime }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-company">{{ T.contact.fCompany }}</label>
+<input id="c-company" name="podjetje" value="{{ cForm.podjetje }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-email">{{ T.contact.fEmail }} *</label>
+<input id="c-email" name="eposta" type="email" required="{{ true }}" value="{{ cForm.eposta }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-phone">{{ T.contact.fPhone }}</label>
+<input id="c-phone" name="telefon" type="tel" value="{{ cForm.telefon }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-route">{{ T.contact.fRoute }}</label>
+<input id="c-route" name="relacija" placeholder="{{ T.contact.fRoutePh }}" value="{{ cForm.relacija }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-cargo">{{ T.contact.fCargo }}</label>
+<input id="c-cargo" name="tovor" value="{{ cForm.tovor }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px">
+</div>
+<div>
+<label style="display:block;font-size:13px;font-weight:600;margin-bottom:5px" for="c-msg">{{ T.contact.fMsg }} *</label>
+<textarea id="c-msg" name="sporocilo" required="{{ true }}" rows="4" value="{{ cForm.sporocilo }}" sc-camel-on-change="{{ onContactChange }}" style="width:100%;padding:11px;border:1px solid #d8cfc0;border-radius:4px;font-size:15px;resize:vertical"></textarea>
+</div>
+<input type="text" name="_gotcha" value="{{ cForm.gotcha }}" sc-camel-on-change="{{ onContactChange }}" style="position:absolute;left:-9999px" tabindex="-1" autocomplete="off">
+<label style="display:flex;align-items:flex-start;gap:9px;font-size:13px;line-height:1.5;color:#3a362f" for="c-consent">
+<input id="c-consent" name="soglasje" type="checkbox" required="{{ true }}" checked="{{ cForm.soglasje }}" sc-camel-on-change="{{ onContactChange }}" style="margin-top:3px">
+<span>{{ T.contact.consentLabel }} <button type="button" sc-camel-on-click="{{ goPrivacy }}" style="background:none;border:none;padding:0;color:#1e8e4f;text-decoration:underline;font-size:13px;cursor:pointer">{{ T.contact.consentLink }}</button>. *</span>
+</label>
+<sc-if value="{{ cError }}" hint-placeholder-val="{{ false }}"><p style="color:#b3261e;font-size:13px;margin:0">{{ cError }}</p></sc-if>
+<button type="submit" disabled="{{ contactSending }}" style="background:#1e8e4f;color:#fff;border:none;padding:14px;border-radius:4px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:16px;text-transform:uppercase">{{ contactSubmitLabel }}</button>
+<p style="font-size:12px;color:#9a9089;margin:0">{{ T.contact.endpointNote }}</p>
+</form>
+</sc-if>
+</div>
+<div style="display:flex;flex-direction:column;gap:18px">
+<div style="background:#242424;color:#f5f1ec;padding:22px;border-radius:4px">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;margin:0 0 12px;color:#1e8e4f">{{ T.contact.dispatchTitle }}</h2>
+<p style="margin:0 0 10px;font-size:15px">{{ T.contact.dispatchRole }}</p>
+<a href="tel:+38627031262" style="display:block;color:#f5f1ec;font-size:15px;margin:0 0 4px;text-decoration:none">{{ T.contact.phoneLabel }}: +386 2 703 12 62</a>
+<a href="tel:+38641639842" style="display:block;color:#f5f1ec;font-size:15px;margin:0 0 4px;text-decoration:none">{{ T.contact.mobileLabel }}: +386 41 639 842</a>
+<p style="margin:0 0 4px;font-size:15px;color:#c9c3ba">TimoCom: 042592</p>
+<a href="mailto:sautrans@gmail.com" style="display:block;color:#1e8e4f;font-size:15px">sautrans@gmail.com</a>
+</div>
+<div style="background:#fff;border:1px solid #e5ddd2;padding:22px">
+<h2 style="font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:18px;margin:0 0 12px">{{ T.contact.officeTitle }}</h2>
+<p style="margin:0 0 2px;font-size:15px;color:#3a362f;font-weight:600">Avtoprevozništvo Šauperl d.o.o.</p>
+<p style="margin:0 0 2px;font-size:15px;color:#3a362f">Industrijska cesta 5</p>
+<p style="margin:0 0 10px;font-size:15px;color:#3a362f">SI-2234 Benedikt, Slovenija</p>
+<p style="margin:0 0 10px;font-size:13px;color:#8a8378">{{ T.contact.seatNote }}</p>
+<p style="margin:0 0 4px;font-size:14px;color:#6b6459">{{ T.contact.vatLabel }}: SI35507233</p>
+<p style="margin:0 0 2px;font-size:14px;color:#6b6459">{{ T.contact.bankLabel }}: OTP banka d.d.</p>
+<p style="margin:0 0 2px;font-size:14px;color:#6b6459">IBAN: SI56 0400 0027 9569 558</p>
+<p style="margin:0;font-size:14px;color:#6b6459">SWIFT/BIC: KBMASI2X</p>
+</div>
+<div style="aspect-ratio:4/3;border:1px solid #d8cfc0;overflow:hidden">
+<iframe src="https://www.google.com/maps?q=Industrijska+cesta+5,+2234+Benedikt,+Slovenija&output=embed" width="100%" height="100%" style="border:0;display:block" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Lokacija pisarne"></iframe>
+</div>
+</div>
+</div>
+</section>
+</sc-if>
+
+<!-- PRIVACY -->
+<sc-if value="{{ isPrivacy }}" hint-placeholder-val="{{ false }}">
+<section style="padding:clamp(44px,7vw,80px) 20px"><div style="max-width:760px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0 0 22px">{{ T.legal.privacyTitle }}</h1>
+<sc-for list="{{ T.legal.privacyBody }}" as="p" hint-placeholder-count="6"><p style="font-size:15px;line-height:1.7;color:#3a362f;margin:0 0 16px">{{ p }}</p></sc-for>
+</div></section>
+</sc-if>
+
+<!-- COOKIES PAGE -->
+<sc-if value="{{ isCookiesPage }}" hint-placeholder-val="{{ false }}">
+<section style="padding:clamp(44px,7vw,80px) 20px"><div style="max-width:760px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0 0 22px">{{ T.legal.cookiesTitle }}</h1>
+<sc-for list="{{ T.legal.cookiesBody }}" as="p" hint-placeholder-count="4"><p style="font-size:15px;line-height:1.7;color:#3a362f;margin:0 0 16px">{{ p }}</p></sc-for>
+</div></section>
+</sc-if>
+
+<!-- TERMS -->
+<sc-if value="{{ isTerms }}" hint-placeholder-val="{{ false }}">
+<section style="padding:clamp(44px,7vw,80px) 20px"><div style="max-width:760px;margin:0 auto">
+<h1 style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:clamp(28px,4vw,42px);margin:0 0 22px">{{ T.legal.termsTitle }}</h1>
+<sc-for list="{{ T.legal.termsBody }}" as="p" hint-placeholder-count="6"><p style="font-size:15px;line-height:1.7;color:#3a362f;margin:0 0 16px">{{ p }}</p></sc-for>
+</div></section>
+</sc-if>
+
+</main>
+
+<!-- FOOTER -->
+<footer style="background:#1a1a1a;color:#c9c3ba;padding:44px 20px 26px">
+<div style="max-width:1200px;margin:0 auto">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;margin-bottom:30px">
+<div>
+<p style="font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:22px;color:#f5f1ec;margin:0 0 10px;display:flex;align-items:center;gap:8px"><span style="width:22px;height:22px;border-radius:5px;background:#1e8e4f;display:inline-flex;align-items:center;justify-content:center;color:#f5f1ec;font-size:14px;font-weight:800">Š</span> ŠAUPERL</p>
+<p style="font-size:13px;line-height:1.6;margin:0">{{ T.footer.legalName }}</p>
+<p style="font-size:13px;line-height:1.6;margin:6px 0 0;color:#8a8378">Strma ulica 18, SI-2234 Benedikt, Slovenija</p>
+</div>
+<div>
+<p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:#f5f1ec;margin:0 0 10px;font-size:15px;text-transform:uppercase">{{ T.footer.navTitle }}</p>
+<sc-for list="{{ footerNavItems }}" as="fn" hint-placeholder-count="6">
+<button sc-camel-on-click="{{ fn.onClick }}" style="display:block;background:none;border:none;color:#c9c3ba;font-size:14px;padding:4px 0;text-align:left">{{ fn.label }}</button>
+</sc-for>
+</div>
+<div>
+<p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:#f5f1ec;margin:0 0 10px;font-size:15px;text-transform:uppercase">{{ T.footer.legalTitle }}</p>
+<button sc-camel-on-click="{{ goPrivacy }}" style="display:block;background:none;border:none;color:#c9c3ba;font-size:14px;padding:4px 0;text-align:left">{{ T.footer.legalPrivacy }}</button>
+<button sc-camel-on-click="{{ goCookiesPage }}" style="display:block;background:none;border:none;color:#c9c3ba;font-size:14px;padding:4px 0;text-align:left">{{ T.footer.legalCookies }}</button>
+<button sc-camel-on-click="{{ goTerms }}" style="display:block;background:none;border:none;color:#c9c3ba;font-size:14px;padding:4px 0;text-align:left">{{ T.footer.legalTerms }}</button>
+<a href="/kariera.html" style="display:block;color:#c9c3ba;font-size:14px;padding:4px 0;text-align:left;text-decoration:none">Prosta delovna mesta</a>
+</div>
+<div>
+<p style="font-family:'Barlow Condensed',sans-serif;font-weight:700;color:#f5f1ec;margin:0 0 10px;font-size:15px;text-transform:uppercase">{{ T.footer.contactTitle }}</p>
+<p style="font-size:14px;margin:0 0 4px">+386 2 703 12 62</p>
+<p style="font-size:14px;margin:0 0 12px">sautrans@gmail.com</p>
+<span style="font-size:13px;color:#8a8378" title="{{ T.footer.employeeLogin }}">flota.sauperl.com — {{ T.footer.employeeLogin }}</span>
+</div>
+</div>
+<div style="border-top:1px solid #333;padding-top:18px;font-size:12px;color:#6b6459">© {{ year }} {{ T.footer.legalName }}. {{ T.footer.rights }}</div>
+</div>
+</footer>
+
+<!-- MOBILE QUICK-CONTACT BAR -->
+<div class="sp-mobile-cta" style="position:fixed;bottom:0;left:0;right:0;z-index:40;border-top:1px solid #333">
+<a href="tel:+38641639842" style="flex:1;background:#242424;color:#f5f1ec;text-align:center;padding:14px 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-decoration:none;text-transform:uppercase">{{ T.contact.mobileLabel }}</a>
+<button sc-camel-on-click="{{ goContact }}" style="flex:1;background:#1e8e4f;color:#fff;border:none;padding:14px 8px;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:15px;text-transform:uppercase">{{ T.header.cta }}</button>
+</div>
+
+<!-- COOKIE BANNER -->
+<sc-if value="{{ cookieVisible }}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-label="Piškotki" style="position:fixed;bottom:0;left:0;right:0;z-index:100;background:#1a1a1a;color:#f5f1ec;padding:18px 20px;display:flex;gap:16px;flex-wrap:wrap;align-items:center;justify-content:space-between;border-top:3px solid #1e8e4f">
+<p style="margin:0;font-size:14px;max-width:640px;line-height:1.5">{{ T.cookie.text }} <button sc-camel-on-click="{{ goCookiesPage }}" style="background:none;border:none;color:#1e8e4f;text-decoration:underline;padding:0;font-size:14px">{{ T.cookie.more }}</button></p>
+<div style="display:flex;gap:10px;flex-shrink:0">
+<button sc-camel-on-click="{{ rejectCookies }}" style="background:none;border:1px solid #5a5a5a;color:#f5f1ec;padding:10px 18px;border-radius:4px;font-size:14px;font-weight:600">{{ T.cookie.reject }}</button>
+<button sc-camel-on-click="{{ acceptCookies }}" style="background:#1e8e4f;border:none;color:#fff;padding:10px 18px;border-radius:4px;font-size:14px;font-weight:700">{{ T.cookie.accept }}</button>
+</div>
+</div>
+</sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+const NAV_ORDER = ['home','services','fleet','coverage','about','careers','contact'];
+const NAV_VISIBLE = ['home','services','coverage','about','careers','contact'];
+
+const DATA = {
+sl: {
+header: { cta: 'Povpraševanje' },
+nav: { home:'Domov', services:'Storitve', fleet:'Vozni park', coverage:'Področja poslovanja', about:'O nas', careers:'Kariera', contact:'Kontakt' },
+home: {
+kicker: 'Lasten vozni park. En dispečer. Vsa Evropa.',
+heroTitle: 'Dogovorjeno je dogovorjeno – cestni prevoz tovora po vsej EU, v Veliko Britanijo, Švico in na zahodni Balkan.',
+heroSub: 'Ko pokličete, veste, s kom govorite: dispečer pozna vašo relacijo, vaš tovor in vaš rok. Lasten vozni park osmih tovornjakov vozi po Sloveniji, EU, Veliki Britaniji, Švici in zahodnem Balkanu.',
+heroCta: 'Pošljite povpraševanje',
+heroCta2: 'Naše storitve',
+trust: [
+{ title: 'Lasten vozni park', desc: '8 tovornjakov z odprtimi platformami in vozili s ponjavo – vaš tovor pelje voznik, ki ga poznamo, ne podizvajalec.' },
+{ title: 'Neposredni dispečer', desc: 'En klic, en človek, ki pozna vaše ime in vašo relacijo – od povpraševanja do dostave.' },
+{ title: 'EU, VB, Švica, Balkan', desc: 'Redne relacije, ki jih vozimo že vrsto let – od Beneluksa do Beograda.' }
+],
+servicesTitle: 'Kaj vozimo',
+servicesLink: 'Vse storitve',
+coverageTitle: 'Kam vozimo',
+coverageText: 'Naša vozila redno vozijo po celotni EU, Veliki Britaniji in Švici, ter po državah zahodnega Balkana. Za relacije zunaj EU poskrbimo za carinsko in tranzitno dokumentacijo.',
+coverageLink: 'Poglej področja poslovanja',
+ctaTitle: 'Kdaj lahko naložimo vaš tovor?',
+ctaText: 'Povejte nam, od kod do kam vozite in kaj nalagate – dispečer vam odgovori osebno, še danes.',
+ctaButton: 'Povprašajte zdaj'
+},
+services: {
+title: 'Storitve',
+intro: 'Specializirani smo za cestni prevoz bivalnih enot in drugega tovora z odprtimi vozili in vozili s ponjavo – večinoma kot standarden tovor v okviru dovoljenih cestnih dimenzij, občasno pa kot izredni prevoz, kadar širina presega 2,55 m. Ker vozimo redno, poznamo vsako mejo, vsak terminal in vsak dokument, ki ga relacija zahteva.',
+cards: [
+{ title: 'Prevoz z odprtimi vozili', desc: 'Prevoz bivalnih enot ter drugega blaga, opreme in materialov z odprtimi tovornjaki – v okviru standardnih cestnih dimenzij (širina do 2,55 m), nosilnost do 10 in do 15 ton.' },
+{ title: 'Prevoz s ponjavo (MEGA)', desc: 'Zaprta tovorna vozila MEGA izvedbe za blago, ki zahteva zaščito pred vremenom – notranja višina tovora do 3,00 m.' },
+{ title: 'Izredni transporti', desc: 'Kadar bivalna enota ali drug tovor presega širino 2,55 m, uredimo izredni prevoz po Avstriji, Nemčiji, Švici, Franciji, Belgiji in na Nizozemskem – do 15 ton teže ter do 16,00 m dolžine, 3,00 m širine in 4,00 m višine.' },
+{ title: 'Koordinacija nakladanja in razkladanja', desc: 'Dogovarjanje terminov s pošiljatelji in prejemniki ter spremljanje poteka.' },
+{ title: 'Carinska in tranzitna dokumentacija', desc: 'Urejanje CMR tovornih listov ter T1 tranzitnih dokumentov za relacije zunaj EU.' }
+]
+},
+fleet: {
+title: 'Vozni park',
+intro: '8 tovornjakov, ki vsak teden prevozijo relacije od Slovenije do zahodne Evrope in nazaj – z odprtimi platformami za bivalne enote in splošni tovor ter vozili s ponjavo MEGA izvedbe.',
+stats: [ { value:'8', label:'tovornjakov' }, { value:'~1.200', label:'pošiljk letno' }, { value:'1', label:'dostavno vozilo' } ],
+note: 'Fotografije vozil bodo dodane naknadno. [PLACEHOLDER: fotografije voznega parka]'
+},
+coverage: {
+title: 'Področja poslovanja',
+intro: 'Iz Slovenije vozimo tri geografske cone: EU in Veliko Britanijo, Švico ter zahodni Balkan – vsako s svojimi mejnimi postopki, ki jih poznamo iz vsakodnevne prakse, ne iz priročnika.',
+stats: [ { value:'33', label:'držav na naših relacijah' }, { value:'8', label:'tovornjakov' }, { value:'~1.200', label:'pošiljk letno' } ],
+legendHome: 'Slovenija',
+legendEu: 'EU / VB / Švica',
+legendOther: 'Zahodni Balkan',
+regionsTitle: 'Cone, ki jih vozimo',
+regions: [
+{ title: 'Evropska unija', countries: 'vseh 27 članic – od Beneluksa do Baltika, od Skandinavije do Iberskega polotoka', text: 'Naša najpogostejša relacija. Ni carinskih formalnosti znotraj EU – samo CMR tovorni list in dogovorjen termin nakladanja.' },
+{ title: 'Velika Britanija', countries: 'Anglija, Škotska, Wales', text: 'Prevoz v tretjo državo po brexitu. Carinsko deklaracijo in dokumentacijo za mejni prehod uredimo pred odhodom vozila, ne na trajektu.' },
+{ title: 'Švica', countries: 'celotno ozemlje Švicarske konfederacije', text: 'Carinski tranzit T1/T2, cestna pristojbina za težka vozila (LSVA) in nočna/nedeljska prepoved vožnje za tovornjake – vse vračunano v ponudbo vnaprej.' },
+{ title: 'Zahodni Balkan', countries: 'Srbija, Bosna in Hercegovina, Severna Makedonija, Črna gora, Kosovo', text: 'CMR in tranzitni dokumenti ter poznavanje mejnih prehodov (Šentilj, Gradiška, Horgoš) in realnih čakalnih časov na njih.' }
+],
+docsTitle: 'Dokumentacija, ki jo urejamo za vas',
+docsIntro: 'Kratek slovar, če se prvič srečujete s temi izrazi.',
+docs: [
+{ term: 'CMR', desc: 'Mednarodni tovorni list – dokazuje pogodbo o prevozu in stanje tovora ob prevzemu.' },
+{ term: 'T1 / T2', desc: 'Tranzitna dokumenta za blago, ki še ni ocarinjeno oz. je iz EU (T2), ob prehodu meje z državo zunaj EU.' },
+{ term: 'LSVA', desc: 'Švicarska cestna pristojbina za težka vozila, odvisna od teže in prevožene razdalje.' },
+{ term: 'Carinska deklaracija', desc: 'Izvozna/uvozna deklaracija za blago, ki prečka mejo EU – npr. na poti v Veliko Britanijo ali na Balkan.' }
+],
+concernsTitle: 'Za kaj poskrbimo, ne da bi vprašali',
+concernsIntro: 'Kot dober gospodar preverimo tisto, kar bi vas moralo skrbeti, še preden vprašate.',
+concerns: [
+{ q: 'Kdo odgovarja, če se kaj zaplete?', a: 'Za mednarodni cestni prevoz velja Konvencija CMR – jasno določa odgovornost prevoznika za tovor od prevzema do dostave.' },
+{ q: 'Ali je tovor med vožnjo varno pritrjen?', a: 'Voznik pred vsako relacijo osebno preveri natovarjanje in pritrditev tovora – ne prepustimo tega naključju ali hitenju.' },
+{ q: 'Kako vem, kje je moja pošiljka?', a: 'Ne pošiljamo samodejnih obvestil – pokličete ali pišete dispečerju, ki pozna vašo pošiljko, in dobite odgovor osebno, isti dan.' },
+{ q: 'Kaj, če vozilo odpove ali voznik zboli?', a: 'Z 8 vozili v lastnem parku lahko hitro uredimo nadomestno rešitev, ne da bi to pomenilo dodaten strošek za vas.' },
+{ q: 'Bo cena na koncu res taka, kot je bila dogovorjena?', a: 'Cestnina, LSVA, carinski stroški in dokumentacija so vključeni v ponudbo vnaprej – na računu ni presenečenj.' }
+],
+note: 'Ko potrdimo ceno, so vsi ti stroški in postopki že vključeni – brez presenečenj na računu ali zamud na meji.',
+cta: 'Povprašajte za vašo relacijo'
+},
+about: {
+title: 'O nas',
+hook: 'Ko tovor krene na pot, gre z njim tudi naša beseda.',
+intro: 'Poznate tisti trenutek: tovor je pripravljen, rok je določen, dokumentacija čaka. In edino vprašanje, ki v resnici šteje, je – ali bo prevoznik prišel takrat, ko je rekel, da bo? Na to vprašanje odgovarjamo od leta 1991.',
+visionTitle: 'Vizija',
+vision: 'Postati prvi klic vsakega špediterja in proizvodnega podjetja, ki potrebuje zanesljiv cestni prevoz tovora med Slovenijo in katero koli točko v EU, Veliki Britaniji, Švici ali na Balkanu – z lastnim voznim parkom in enim, vedno dosegljivim dispečerjem.',
+valuesTitle: 'Vrednote',
+values: [
+{ title: 'Osebna odgovornost', text: 'Vsak prevoz ima ime voznika in telefonsko številko dispečerja – ne samo številko naročila.' },
+{ title: 'Točnost brez izjem', text: 'Rok, ki ga potrdimo, je rok, ki ga držimo – ali pokličemo, preden vprašate.' },
+{ title: 'Znanje meje in dokumentacije', text: 'CMR, T1/T2, LSVA in carinski postopki so urejeni, preden vozilo pride na mejo.' },
+{ title: 'Rast z ljudmi', text: 'Vlagamo v voznike in tehnologijo – TimoCom, digitalni tahograf – ne v oglase.' }
+],
+timelineTitle: 'Eno vozilo, ena beseda, tri desetletja',
+timeline: [
+{ year:'1991', text:'Branko Šauperl v Benediktu v Slovenskih goricah registrira avtoprevozništvo. Začne z enim vozilom in preprostim pravilom: dogovorjeno je dogovorjeno.' },
+{ year:'2015', text:'Iz samostojne dejavnosti nastane Avtoprevozništvo Šauperl, trgovina in storitve d.o.o. Ista družina, isti kraj, širša odgovornost.' },
+{ year:'2017', text:'Odpremo poslovno enoto na Industrijski cesti 5 v Benediktu in dejavnosti dodamo pretovarjanje.' },
+{ year:'Danes', text:'Podjetje vodi sin David Šauperl. Branko Šauperl je v veliko oporo, saj še naprej vsakodnevno sodeluje pri izvedbi prevozov.' }
+],
+whatTitle: 'Kaj počnemo',
+whatIntro: 'Specializirani smo za cestni prevoz bivalnih enot in drugega tovora z odprtimi vozili in vozili s ponjavo ter pretovarjanje. Ne vozimo vsega – vozimo tisto, kar znamo voziti dobro.',
+what: [ 'Prevozi bivalnih enot, opreme in materialov za proizvodna in trgovska podjetja', 'Redni linijski prevozi po dogovorjenem urniku', 'Posamični prevozi po naročilu', 'Pretovarjanje in prekladanje' ],
+whereTitle: 'Kam vozimo',
+whereIntro: 'Naši vozniki redno vozijo po Evropski uniji, v Veliko Britanijo, Švico in na trge zahodnega Balkana – Srbijo, Bosno in Hercegovino, Severno Makedonijo, Črno goro in Kosovo. To pomeni, da se vam ni treba ukvarjati z vprašanji, s katerimi se ukvarjamo mi:',
+where: [
+{ title: 'Velika Britanija', text: 'Prevoz v tretjo državo po brexitu, s carinsko dokumentacijo, ki jo uredimo vnaprej.' },
+{ title: 'Švica', text: 'Carinski postopki, tranzit T1/T2, cestna pristojbina za težka vozila (LSVA) ter nočna in nedeljska prepoved vožnje – vse načrtujemo že v terminu, ne šele na meji.' },
+{ title: 'Zahodni Balkan', text: 'CMR, tranzitni dokumenti in poznavanje mejnih prehodov ter realnih čakalnih časov.' }
+],
+whereNote: 'Ko ceno potrdimo, so ti stroški že v njej – brez naknadnih presenečenj na računu.',
+stepsTitle: 'Kako poteka sodelovanje',
+steps: [
+{ n:'1', title:'Povpraševanje', text:'Pošljete relacijo, tovor in okvirni termin.' },
+{ n:'2', title:'Ponudba', text:'Odgovorimo z jasno ceno in datumom – praviloma še isti delovni dan.' },
+{ n:'3', title:'Izvedba', text:'Dodelimo vozilo in voznika. En kontakt za celoten prevoz.' },
+{ n:'4', title:'Dokumentacija', text:'CMR in prevzemni dokumenti so urejeni, račun pride s prevozom.' }
+],
+quote: 'Ko tovor krene na pot, gre z njim tudi naša beseda.',
+quoteAuthor: 'David Šauperl, direktor',
+teamTitle: 'Ljudje za volanom in za telefonom',
+teamIntro: 'Smo majhno podjetje. To ni omejitev – to je razlog, da vas poznamo. Pri nas ne boste dobili klicnega centra, dobili boste človeka, ki se spomni vašega prejšnjega prevoza.',
+team: [ { count:'David Šauperl', role:'Direktor' }, { count:'Branko Šauperl', role:'Ustanovitelj' }, { count:'Disponentka', role:'Vaš kontakt za relacije' }, { count:'9 voznikov', role:'Mednarodne relacije' } ],
+forwardTitle: 'Kam gremo naprej',
+forward: 'David Šauperl si dejavno prizadeva za rast: išče nove zanesljive voznike in nove poslovne stranke, hkrati pa poslovanje postopoma tehnološko posodablja in avtomatizira – od razpisovanja tovora na TimoCom do digitalnih tahografskih zapisov – da ostanemo osebni, a tehnološko na tekočem.',
+numbersTitle: 'Nekaj številk namesto pridevnikov',
+numbers: [
+{ label:'Leto ustanovitve', value:'1991' },
+{ label:'Preoblikovanje v d.o.o.', value:'2015' },
+{ label:'Vozni park', value:'8 vozil' },
+{ label:'Prevozov letno', value:'pribl. 1.200' },
+{ label:'Sedež', value:'Strma ulica 18, 2234 Benedikt' },
+{ label:'Poslovna enota', value:'Industrijska cesta 5, 2234 Benedikt' },
+{ label:'Matična številka', value:'6809545000' },
+{ label:'ID za DDV', value:'SI 35507233' }
+],
+closing: 'Ko boste naslednjič načrtovali odpremo tovora, imate dve možnosti. Lahko preverjate, kje je tovor, in upate, da bo rok držal. Ali pa pokličete nekoga, ki vam to pove, še preden vprašate.',
+closingCta: 'Pošljite povpraševanje'
+},
+careers: {
+title: 'Vozniki, ki jih pokličemo po imenu – ne po številki vozila.',
+intro: 'Iščete službo, kjer vas dispečer pozna po imenu? Redno iščemo izkušene voznike za mednarodni cestni promet – pridružite se ekipi, ki ostaja namenoma majhna in osebna.',
+why: [
+{ title: 'En dispečer, ne razpored iz aplikacije', text: 'Relacije vam osebno dodeli naša disponentka – ne algoritem. Če je težava, pokličete človeka, ki jo lahko reši.' },
+{ title: 'Raznolike relacije', text: 'EU, Velika Britanija, Švica in zahodni Balkan – ne vozite iste proge v krog, mesec za mesecem.' },
+{ title: 'Sodoben vozni park', text: '8 tovornjakov z odprtimi platformami in vozili s ponjavo, digitalna tahografska kartica, prijava tovora prek TimoCom.' },
+{ title: 'Družinsko podjetje, ne korporacija', text: 'David in Branko Šauperl sta dosegljiva neposredno – odločitve se sprejemajo isti dan, ne čez tri oddelke.' }
+],
+quote: 'Vsak voznik je za nas obraz podjetja na cesti – zato vlagamo v ljudi, ne v oglase.',
+quoteAuthor: 'David Šauperl, direktor',
+processTitle: 'Kako poteka prijava',
+process: [
+{ n:'1', title:'Oddate prijavo', text:'Izpolnite obrazec spodaj ali pošljete CV na sautrans@gmail.com.' },
+{ n:'2', title:'Pokličemo vas osebno', text:'David ali disponentka – ne kadrovska služba, ne posrednik.' },
+{ n:'3', title:'Dogovor o relacijah', text:'Skupaj uskladimo, katere proge in urnik vam najbolj ustrezajo.' }
+],
+interviewTitle: 'Kakšen je razgovor pri nas',
+interviewIntro: 'Vemo, da je menjava zaposlitve lahko stresna. Zato je najin razgovor pogovor, ne izpraševanje.',
+interview: [
+'Traja 30–45 minut – dovolj, da se spoznamo, ne toliko, da vam vzame popoldne.',
+'Sedite nasproti Davida ali disponentke – ne pred komisijo petih ljudi.',
+'Vprašate lahko vse: o plačilu, relacijah, počitku doma, vozilih – odgovorimo neposredno, brez izmikanja.',
+'Odgovor dobite v nekaj dneh, osebno po telefonu – od Davida ali disponentke, ne po e-pošti od kadrovske službe.',
+'Pridete lahko v delovnih oblačilih – obleke ne pričakujemo.'
+],
+offerTitle: 'Kaj ponujamo',
+offer: [ 'Redne relacije po EU, Veliki Britaniji, Švici in Balkanu', 'Sodoben vozni park', 'Neposreden dogovor z dispečerjem, brez birokracije', 'Stabilno, dolgoročno zaposlitev v družinskem podjetju' ],
+reqTitle: 'Pogoji',
+req: [ 'Vozniško dovoljenje kategorije C+E', 'Koda 95', 'Digitalna tahografska kartica', 'Izkušnje z mednarodnim prevozom so prednost' ],
+formTitle: 'Prijava za zaposlitev',
+fName:'Ime in priimek', fPhone:'Telefon', fEmail:'E-pošta', fExp:'Izkušnje', fCv:'Priloži CV',
+consentLabel: 'Strinjam se z obdelavo mojih osebnih podatkov za namen izvedbe kadrovskega postopka, v skladu z',
+consentLink: 'politiko zasebnosti',
+submit: 'Pošlji prijavo',
+sending: 'Pošiljanje …',
+success: 'Hvala za prijavo! Oglasili se vam bomo v najkrajšem možnem času.',
+endpointNote: 'Vašo prijavo prejme David Šauperl neposredno po e-pošti.'
+},
+contact: {
+title: 'Kontakt',
+intro: 'Povejte nam, od kod do kam vozite tovor – dispečer vam odgovori osebno, ne klicni center. Za nujne primere pišite naravnost na sautrans@gmail.com.',
+fName:'Ime in priimek', fCompany:'Podjetje', fEmail:'E-pošta', fPhone:'Telefon',
+fRoute:'Relacija (od–do)', fRoutePh:'npr. Maribor – Rotterdam', fCargo:'Vrsta tovora', fMsg:'Sporočilo',
+consentLabel: 'Strinjam se z obdelavo mojih osebnih podatkov za namen obravnave tega povpraševanja, v skladu z',
+consentLink: 'politiko zasebnosti',
+submit: 'Pošlji povpraševanje',
+sending: 'Pošiljanje …',
+success: 'Hvala za povpraševanje! Dispečer vam bo odgovoril v najkrajšem možnem času.',
+endpointNote: 'Vaše sporočilo prejme dispečer neposredno po e-pošti.',
+dispatchTitle: 'Dispečer', dispatchRole: 'Vaš kontakt za relacije in razporejanje',
+phoneLabel: 'Telefon', mobileLabel: 'Mobitel', vatLabel: 'ID za DDV', bankLabel: 'Banka',
+seatNote: 'Sedež podjetja: Strma ulica 18, 2234 Benedikt.',
+officeTitle: 'Pisarna',
+mapPlaceholder: '[PLACEHOLDER: zemljevid lokacije]'
+},
+legal: {
+privacyTitle: 'Politika zasebnosti',
+privacyBody: [
+'Upravljavec osebnih podatkov je Avtoprevozništvo Šauperl, trgovina in storitve d.o.o., Strma ulica 18, SI-2234 Benedikt, matična številka 6809545000, ID za DDV SI35507233 ("upravljavec"). Za vsa vprašanja glede zasebnosti nas kontaktirajte na sautrans@gmail.com.',
+'Podatke iz kontaktnega obrazca (ime, podjetje, e-pošta, telefon, relacija, vrsta tovora, sporočilo) obdelujemo na podlagi vaše privolitve oziroma za izvedbo ukrepov pred sklenitvijo pogodbe (točki (a) in (b) 6. člena GDPR), izključno za obravnavo in odgovor na vaše povpraševanje.',
+'Podatke iz prijavnega obrazca za zaposlitev (ime, telefon, e-pošta, izkušnje, CV) obdelujemo na podlagi vaše privolitve, izključno za namen izvedbe kadrovskega postopka.',
+'Podatke iz kontaktnega obrazca hranimo največ 12 mesecev od prejema povpraševanja, če iz njega ne izhaja poslovno razmerje. Podatke iz prijav za zaposlitev hranimo največ 6 mesecev po zaključku izbirnega postopka, razen če kandidat izrecno privoli v daljšo hrambo za morebitne prihodnje zaposlitve.',
+'Vaših podatkov ne posredujemo tretjim osebam, razen izvajalcem storitev (npr. ponudnik gostovanja spletne strani, ponudnik e-poštnih storitev), ki jih obdelujejo v našem imenu in izključno po naših navodilih.',
+'Skladno z GDPR imate pravico do dostopa, popravka, izbrisa, omejitve obdelave, ugovora in prenosljivosti svojih podatkov. Zahtevo lahko kadarkoli oddate na sautrans@gmail.com; odgovorimo brez nepotrebnega odlašanja, najkasneje v enem mesecu.',
+'Če menite, da obdelava vaših podatkov krši GDPR, imate pravico vložiti pritožbo pri Informacijskem pooblaščencu Republike Slovenije (Dunajska cesta 22, 1000 Ljubljana, gp.ip@ip-rs.si).',
+'To politiko lahko občasno posodobimo. '
+]
+},
+legalCookies: {},
+_dummy:null
+},
+en: {
+header: { cta: 'Get a Quote' },
+nav: { home:'Home', services:'Services', fleet:'Fleet', coverage:'Coverage Areas', about:'About Us', careers:'Careers', contact:'Contact' },
+home: {
+kicker: 'Our own fleet. One dispatcher. All of Europe.',
+heroTitle: 'A deal is a deal – road freight transport across the EU, to the UK, Switzerland and the Western Balkans.',
+heroSub: 'When you call, you know who you’re talking to: the dispatcher knows your route, your cargo and your deadline. Our own fleet of eight trucks runs across Slovenia, the EU, the UK, Switzerland and the Western Balkans.',
+heroCta: 'Send an Inquiry',
+heroCta2: 'Our Services',
+trust: [
+{ title: 'Our own fleet', desc: '8 trucks with open platforms and tarpaulin-covered trailers – your cargo is driven by a driver we know, not a subcontractor.' },
+{ title: 'Direct dispatcher', desc: 'One call, one person, who knows your name and your route – from inquiry to delivery.' },
+{ title: 'EU, UK, Switzerland, Balkans', desc: 'Regular routes we’ve driven for years – from the Benelux to Belgrade.' }
+],
+servicesTitle: 'What we transport',
+servicesLink: 'All services',
+coverageTitle: 'Where we drive',
+coverageText: 'Our vehicles run regularly across the entire EU, the United Kingdom and Switzerland, as well as the countries of the Western Balkans. For routes outside the EU we handle the customs and transit documentation.',
+coverageLink: 'View coverage areas',
+ctaTitle: 'When can we load your cargo?',
+ctaText: 'Tell us where you’re shipping from and to, and what you’re loading – the dispatcher will get back to you personally, today.',
+ctaButton: 'Ask Now'
+},
+services: {
+title: 'Services',
+intro: 'We specialise in road transport of mobile homes and other cargo using open vehicles and tarpaulin-covered (curtainside) trailers – mostly as standard freight within permitted road dimensions, and occasionally as an oversized transport when the width exceeds 2.55 m. Because we drive these routes regularly, we know every border, every terminal and every document a route requires.',
+cards: [
+{ title: 'Open-platform transport', desc: 'Transport of mobile homes and other goods, equipment and materials on open trucks – within standard road dimensions (width up to 2.55 m), payload up to 10 and up to 15 tonnes.' },
+{ title: 'Tarpaulin (curtainside/MEGA) transport', desc: 'Enclosed MEGA-type trailers for goods that need protection from the weather – internal cargo height up to 3.00 m.' },
+{ title: 'Oversized transports', desc: 'When a mobile home or other cargo exceeds 2.55 m in width, we arrange an oversized transport through Austria, Germany, Switzerland, France, Belgium and the Netherlands – up to 15 tonnes, and up to 16.00 m in length, 3.00 m in width and 4.00 m in height.' },
+{ title: 'Loading and unloading coordination', desc: 'Arranging appointments with shippers and consignees and monitoring progress.' },
+{ title: 'Customs and transit documentation', desc: 'Handling CMR consignment notes and T1 transit documents for routes outside the EU.' }
+]
+},
+fleet: {
+title: 'Our Fleet',
+intro: '8 trucks that cover routes between Slovenia and Western Europe every week – with open platforms for mobile homes and general cargo, and MEGA-type tarpaulin trailers.',
+stats: [ { value:'8', label:'trucks' }, { value:'~1,200', label:'shipments a year' }, { value:'1', label:'delivery van' } ],
+note: 'Vehicle photos will be added shortly. [PLACEHOLDER: fleet photos]'
+},
+coverage: {
+title: 'Coverage Areas',
+intro: 'From Slovenia we drive three geographic zones: the EU and the United Kingdom, Switzerland, and the Western Balkans – each with its own border procedures, which we know from everyday practice, not from a manual.',
+stats: [ { value:'33', label:'countries on our routes' }, { value:'8', label:'trucks' }, { value:'~1,200', label:'shipments a year' } ],
+legendHome: 'Slovenia',
+legendEu: 'EU / UK / Switzerland',
+legendOther: 'Western Balkans',
+regionsTitle: 'Zones we cover',
+regions: [
+{ title: 'European Union', countries: 'all 27 member states – from the Benelux to the Baltics, from Scandinavia to the Iberian Peninsula', text: 'Our most frequent route. No customs formalities within the EU – just a CMR consignment note and an agreed loading slot.' },
+{ title: 'United Kingdom', countries: 'England, Scotland, Wales', text: 'Transport to a third country post-Brexit. We prepare the customs declaration and border-crossing documentation before the vehicle departs, not on the ferry.' },
+{ title: 'Switzerland', countries: 'the entire territory of the Swiss Confederation', text: 'T1/T2 customs transit, the heavy-vehicle road charge (LSVA), and night/Sunday driving bans for trucks – all factored into the quote in advance.' },
+{ title: 'Western Balkans', countries: 'Serbia, Bosnia and Herzegovina, North Macedonia, Montenegro, Kosovo', text: 'CMR and transit documents, plus knowledge of border crossings (Šentilj, Gradiška, Horgoš) and real waiting times there.' }
+],
+docsTitle: 'Documentation we handle for you',
+docsIntro: 'A short glossary if you’re encountering these terms for the first time.',
+docs: [
+{ term: 'CMR', desc: 'International consignment note – proves the contract of carriage and the condition of the goods at pickup.' },
+{ term: 'T1 / T2', desc: 'Transit documents for goods that are not yet cleared through customs (T1) or that originate in the EU (T2), when crossing a border with a non-EU country.' },
+{ term: 'LSVA', desc: 'The Swiss heavy-vehicle road charge, based on weight and distance travelled.' },
+{ term: 'Customs declaration', desc: 'An export/import declaration for goods crossing the EU border – e.g. on the way to the UK or the Balkans.' }
+],
+concernsTitle: 'What we take care of before you have to ask',
+concernsIntro: 'Like a diligent operator, we check on the things that should worry you before you even ask.',
+concerns: [
+{ q: 'Who is liable if something goes wrong?', a: 'International road transport is governed by the CMR Convention, which clearly sets out the carrier’s liability for the cargo from pickup to delivery.' },
+{ q: 'Is the cargo securely fastened during transport?', a: 'Before every route the driver personally checks the loading and securing of the cargo – we never leave this to chance or to being in a hurry.' },
+{ q: 'How do I know where my shipment is?', a: 'We don’t send automated notifications – you call or write to the dispatcher, who knows your shipment, and you get a personal answer the same day.' },
+{ q: 'What if a vehicle breaks down or a driver falls ill?', a: 'With 8 vehicles in our own fleet we can quickly arrange a replacement solution, without this meaning an extra cost for you.' },
+{ q: 'Will the final price really match what was agreed?', a: 'Tolls, LSVA, customs costs and documentation are included in the quote in advance – there are no surprises on the invoice.' }
+],
+note: 'Once we confirm the price, all these costs and procedures are already included – no surprises on the invoice or delays at the border.',
+cta: 'Ask about your route'
+},
+about: {
+title: 'About Us',
+hook: 'When cargo sets off, our word travels with it.',
+intro: 'You know that moment: the cargo is ready, the deadline is set, the paperwork is waiting. And the only question that really matters is – will the carrier arrive when they said they would? We’ve been answering that question since 1991.',
+visionTitle: 'Vision',
+vision: 'To become the first call of every freight forwarder and manufacturing company that needs reliable road transport between Slovenia and any point in the EU, the United Kingdom, Switzerland or the Balkans – with our own fleet and one, always-reachable dispatcher.',
+valuesTitle: 'Values',
+values: [
+{ title: 'Personal accountability', text: 'Every transport carries the driver’s name and the dispatcher’s phone number – not just an order number.' },
+{ title: 'Punctuality without exception', text: 'A deadline we confirm is a deadline we keep – or we call before you have to ask.' },
+{ title: 'Knowledge of borders and paperwork', text: 'CMR, T1/T2, LSVA and customs procedures are handled before the vehicle reaches the border.' },
+{ title: 'Growth through people', text: 'We invest in drivers and technology – TimoCom, digital tachographs – not in advertising.' }
+],
+timelineTitle: 'One truck, one word, three decades',
+timeline: [
+{ year:'1991', text:'Branko Šauperl registers a haulage business in Benedikt, in the Slovenske gorice hills. He starts with a single vehicle and a simple rule: a deal is a deal.' },
+{ year:'2015', text:'The sole proprietorship becomes Avtoprevozništvo Šauperl, trgovina in storitve d.o.o. Same family, same town, wider responsibility.' },
+{ year:'2017', text:'We open a business unit at Industrijska cesta 5 in Benedikt and add transhipment to our activities.' },
+{ year:'Today', text:'The company is run by son David Šauperl. Branko Šauperl remains a great support, still taking part in transports on a daily basis.' }
+],
+whatTitle: 'What we do',
+whatIntro: 'We specialise in road transport of mobile homes and other cargo using open vehicles and tarpaulin-covered trailers, as well as transhipment. We don’t haul everything – we haul what we know how to haul well.',
+what: [ 'Transport of mobile homes, equipment and materials for manufacturing and trading companies', 'Regular scheduled transports on an agreed timetable', 'One-off transports on request', 'Transhipment and reloading' ],
+whereTitle: 'Where we drive',
+whereIntro: 'Our drivers regularly travel across the European Union, to the United Kingdom, Switzerland and the markets of the Western Balkans – Serbia, Bosnia and Herzegovina, North Macedonia, Montenegro and Kosovo. That means you don’t have to deal with the questions we deal with:',
+where: [
+{ title: 'United Kingdom', text: 'Transport to a third country post-Brexit, with customs documentation we prepare in advance.' },
+{ title: 'Switzerland', text: 'Customs procedures, T1/T2 transit, the heavy-vehicle road charge (LSVA) and night/Sunday driving bans – all planned into the schedule, not sorted out at the border.' },
+{ title: 'Western Balkans', text: 'CMR, transit documents, and knowledge of border crossings and real waiting times.' }
+],
+whereNote: 'Once we confirm the price, these costs are already included in it – no surprises on the invoice afterwards.',
+stepsTitle: 'How our cooperation works',
+steps: [
+{ n:'1', title:'Inquiry', text:'You send us the route, the cargo and a rough timeframe.' },
+{ n:'2', title:'Quote', text:'We reply with a clear price and date – usually the same working day.' },
+{ n:'3', title:'Execution', text:'We assign a vehicle and driver. One point of contact for the whole transport.' },
+{ n:'4', title:'Documentation', text:'The CMR and handover documents are ready, the invoice arrives with the shipment.' }
+],
+quote: 'When cargo sets off, our word travels with it.',
+quoteAuthor: 'David Šauperl, Managing Director',
+teamTitle: 'People behind the wheel and on the phone',
+teamIntro: 'We are a small company. That’s not a limitation – it’s the reason we know you. With us you won’t get a call centre, you’ll get a person who remembers your last shipment.',
+team: [ { count:'David Šauperl', role:'Managing Director' }, { count:'Branko Šauperl', role:'Founder' }, { count:'Dispatcher', role:'Your contact for routes' }, { count:'9 drivers', role:'International routes' } ],
+forwardTitle: 'Where we’re headed',
+forward: 'David Šauperl is actively working on growth: looking for new reliable drivers and new business clients, while gradually modernising and automating operations – from posting loads on TimoCom to digital tachograph records – so that we stay personal while keeping up with technology.',
+numbersTitle: 'A few numbers instead of adjectives',
+numbers: [
+{ label:'Year founded', value:'1991' },
+{ label:'Converted to a d.o.o. (Ltd.)', value:'2015' },
+{ label:'Fleet', value:'8 vehicles' },
+{ label:'Shipments per year', value:'approx. 1,200' },
+{ label:'Registered seat', value:'Strma ulica 18, 2234 Benedikt' },
+{ label:'Business unit', value:'Industrijska cesta 5, 2234 Benedikt' },
+{ label:'Company registration no.', value:'6809545000' },
+{ label:'VAT ID', value:'SI 35507233' }
+],
+closing: 'Next time you’re planning a cargo dispatch, you have two options. You can keep checking where the cargo is and hope the deadline holds. Or you can call someone who tells you that themselves, before you have to ask.',
+closingCta: 'Send an Inquiry'
+},
+careers: {
+title: 'Drivers we call by name – not by truck number.',
+intro: 'Looking for a job where the dispatcher knows you by name? We’re regularly hiring experienced drivers for international road transport – join a team that stays deliberately small and personal.',
+why: [
+{ title: 'One dispatcher, not an app schedule', text: 'Routes are assigned to you personally by our dispatcher – not an algorithm. If there’s a problem, you call a person who can actually solve it.' },
+{ title: 'Varied routes', text: 'EU, United Kingdom, Switzerland and the Western Balkans – you won’t drive the same loop, month after month.' },
+{ title: 'Modern fleet', text: '8 trucks with open platforms and tarpaulin trailers, a digital tachograph card, loads posted via TimoCom.' },
+{ title: 'Family business, not a corporation', text: 'David and Branko Šauperl are reachable directly – decisions are made the same day, not across three departments.' }
+],
+quote: 'Every driver is the face of our company on the road – that’s why we invest in people, not advertising.',
+quoteAuthor: 'David Šauperl, Managing Director',
+processTitle: 'How to apply',
+process: [
+{ n:'1', title:'You apply', text:'Fill in the form below or send your CV to sautrans@gmail.com.' },
+{ n:'2', title:'We call you personally', text:'David or the dispatcher – not HR, not a recruiter.' },
+{ n:'3', title:'We agree on routes', text:'Together we work out which routes and schedule suit you best.' }
+],
+interviewTitle: 'What our interview is like',
+interviewIntro: 'We know that changing jobs can be stressful. That’s why our interview is a conversation, not an interrogation.',
+interview: [
+'It lasts 30–45 minutes – enough to get to know each other, not so much it takes up your whole afternoon.',
+'You sit across from David or the dispatcher – not in front of a panel of five people.',
+'You can ask anything: about pay, routes, time off, the vehicles – we answer directly, no dodging.',
+'You get an answer within a few days, personally by phone – from David or the dispatcher, not by email from HR.',
+'You can come in your work clothes – we don’t expect a suit.'
+],
+offerTitle: 'What we offer',
+offer: [ 'Regular routes across the EU, the United Kingdom, Switzerland and the Balkans', 'A modern fleet', 'Direct agreement with the dispatcher, no red tape', 'Stable, long-term employment in a family business' ],
+reqTitle: 'Requirements',
+req: [ 'Category C+E driving licence', 'Code 95', 'Digital tachograph card', 'International transport experience is an advantage' ],
+formTitle: 'Job Application',
+fName:'Full name', fPhone:'Phone', fEmail:'Email', fExp:'Experience', fCv:'Attach CV',
+consentLabel: 'I agree to the processing of my personal data for the purpose of the recruitment process, in accordance with the',
+consentLink: 'Privacy Policy',
+submit: 'Send Application',
+sending: 'Sending …',
+success: 'Thank you for your application! We will contact you as soon as possible.',
+endpointNote: 'Your application is delivered directly to David Šauperl by email.'
+},
+contact: {
+title: 'Contact',
+intro: 'Tell us where you’re shipping your cargo from and to – the dispatcher will answer you personally, not a call centre. For urgent matters, write straight to sautrans@gmail.com.',
+fName:'Full name', fCompany:'Company', fEmail:'Email', fPhone:'Phone',
+fRoute:'Route (from–to)', fRoutePh:'e.g. Maribor – Rotterdam', fCargo:'Type of cargo', fMsg:'Message',
+consentLabel: 'I agree to the processing of my personal data for the purpose of handling this inquiry, in accordance with the',
+consentLink: 'Privacy Policy',
+submit: 'Send Inquiry',
+sending: 'Sending …',
+success: 'Thank you for your inquiry! The dispatcher will get back to you as soon as possible.',
+endpointNote: 'Your message is delivered directly to the dispatcher by email.',
+dispatchTitle: 'Dispatcher', dispatchRole: 'Your contact for routes and scheduling',
+phoneLabel: 'Phone', mobileLabel: 'Mobile', vatLabel: 'VAT ID', bankLabel: 'Bank',
+seatNote: 'Registered seat: Strma ulica 18, 2234 Benedikt.',
+officeTitle: 'Office',
+mapPlaceholder: '[PLACEHOLDER: location map]'
+},
+legal: {
+privacyTitle: 'Privacy Policy',
+privacyBody: [
+'The controller of personal data is Avtoprevozništvo Šauperl, trgovina in storitve d.o.o., Strma ulica 18, SI-2234 Benedikt, company registration number 6809545000, VAT ID SI35507233 (“the controller”). For any privacy questions, contact us at sautrans@gmail.com.',
+'We process data from the contact form (name, company, email, phone, route, type of cargo, message) on the basis of your consent, or to take steps prior to entering into a contract (Article 6(1)(a) and (b) GDPR), solely to handle and respond to your inquiry.',
+'We process data from the job application form (name, phone, email, experience, CV) on the basis of your consent, solely for the purpose of carrying out the recruitment process.',
+'We keep data from the contact form for a maximum of 12 months from receipt of the inquiry, unless a business relationship arises from it. We keep data from job applications for a maximum of 6 months after the selection process is completed, unless the candidate expressly consents to a longer retention period for potential future employment.',
+'We do not disclose your data to third parties, except to service providers (e.g. website hosting provider, email service provider) who process it on our behalf and solely on our instructions.',
+'Under the GDPR you have the right to access, rectify, erase, restrict the processing of, object to, and port your data. You may submit a request at any time to sautrans@gmail.com; we will respond without undue delay, and no later than within one month.',
+'If you believe that the processing of your data infringes the GDPR, you have the right to lodge a complaint with the Information Commissioner of the Republic of Slovenia (Dunajska cesta 22, 1000 Ljubljana, gp.ip@ip-rs.si).',
+'We may update this policy from time to time.'
+]
+},
+legalCookies: {},
+_dummy:null
+},
+de: {
+header: { cta: 'Anfrage senden' },
+nav: { home:'Startseite', services:'Leistungen', fleet:'Fuhrpark', coverage:'Einsatzgebiete', about:'Über uns', careers:'Karriere', contact:'Kontakt' },
+home: {
+kicker: 'Eigener Fuhrpark. Ein Disponent. Ganz Europa.',
+heroTitle: 'Vereinbart ist vereinbart – Straßengüterverkehr in die gesamte EU, nach Großbritannien, in die Schweiz und auf den westlichen Balkan.',
+heroSub: 'Wenn Sie anrufen, wissen Sie, mit wem Sie sprechen: Der Disponent kennt Ihre Route, Ihre Ladung und Ihren Termin. Unser eigener Fuhrpark aus acht Lkw fährt durch Slowenien, die EU, Großbritannien, die Schweiz und den westlichen Balkan.',
+heroCta: 'Anfrage senden',
+heroCta2: 'Unsere Leistungen',
+trust: [
+{ title: 'Eigener Fuhrpark', desc: '8 Lkw mit offenen Plattformen und Planenaufbauten – Ihre Ladung fährt ein Fahrer, den wir kennen, kein Subunternehmer.' },
+{ title: 'Direkter Disponent', desc: 'Ein Anruf, ein Mensch, der Ihren Namen und Ihre Route kennt – von der Anfrage bis zur Zustellung.' },
+{ title: 'EU, GB, Schweiz, Balkan', desc: 'Feste Routen, die wir seit Jahren fahren – von den Beneluxstaaten bis Belgrad.' }
+],
+servicesTitle: 'Was wir transportieren',
+servicesLink: 'Alle Leistungen',
+coverageTitle: 'Wohin wir fahren',
+coverageText: 'Unsere Fahrzeuge fahren regelmäßig durch die gesamte EU, nach Großbritannien und in die Schweiz sowie in die Länder des westlichen Balkans. Für Routen außerhalb der EU übernehmen wir die Zoll- und Transitdokumentation.',
+coverageLink: 'Einsatzgebiete ansehen',
+ctaTitle: 'Wann können wir Ihre Ladung übernehmen?',
+ctaText: 'Sagen Sie uns, von wo nach wo Sie transportieren und was Sie laden – der Disponent antwortet Ihnen persönlich, noch heute.',
+ctaButton: 'Jetzt anfragen'
+},
+services: {
+title: 'Leistungen',
+intro: 'Wir sind spezialisiert auf den Straßentransport von Mobilheimen und anderer Ladung mit offenen Fahrzeugen und Planenaufbauten – meist als Standardladung innerhalb der zulässigen Straßenabmessungen, gelegentlich als Sondertransport, wenn die Breite 2,55 m überschreitet. Da wir diese Strecken regelmäßig fahren, kennen wir jede Grenze, jedes Terminal und jedes erforderliche Dokument.',
+cards: [
+{ title: 'Transport mit offenen Fahrzeugen', desc: 'Transport von Mobilheimen sowie weiterer Waren, Ausrüstung und Materialien mit offenen Lkw – innerhalb der Standard-Straßenabmessungen (Breite bis 2,55 m), Nutzlast bis 10 bzw. 15 Tonnen.' },
+{ title: 'Transport mit Plane (MEGA)', desc: 'Geschlossene Fahrzeuge in MEGA-Ausführung für Waren, die vor Witterung geschützt werden müssen – Innenhöhe der Ladefläche bis 3,00 m.' },
+{ title: 'Sondertransporte', desc: 'Überschreitet ein Mobilheim oder eine andere Ladung die Breite von 2,55 m, organisieren wir einen Sondertransport durch Österreich, Deutschland, die Schweiz, Frankreich, Belgien und die Niederlande – bis 15 Tonnen Gewicht sowie bis 16,00 m Länge, 3,00 m Breite und 4,00 m Höhe.' },
+{ title: 'Koordination von Be- und Entladung', desc: 'Terminabsprachen mit Absendern und Empfängern sowie Verlaufskontrolle.' },
+{ title: 'Zoll- und Transitdokumentation', desc: 'Abwicklung von CMR-Frachtbriefen sowie T1-Transitdokumenten für Routen außerhalb der EU.' }
+]
+},
+fleet: {
+title: 'Fuhrpark',
+intro: '8 Lkw, die jede Woche Routen zwischen Slowenien und Westeuropa und zurück fahren – mit offenen Plattformen für Mobilheime und allgemeine Ladung sowie Planenfahrzeugen in MEGA-Ausführung.',
+stats: [ { value:'8', label:'Lkw' }, { value:'~1.200', label:'Sendungen pro Jahr' }, { value:'1', label:'Lieferfahrzeug' } ],
+note: 'Fahrzeugfotos werden in Kürze ergänzt. [PLATZHALTER: Fuhrparkfotos]'
+},
+coverage: {
+title: 'Einsatzgebiete',
+intro: 'Von Slowenien aus fahren wir drei geografische Zonen: die EU und Großbritannien, die Schweiz sowie den westlichen Balkan – jede mit eigenen Grenzformalitäten, die wir aus der täglichen Praxis kennen, nicht aus dem Handbuch.',
+stats: [ { value:'33', label:'Länder auf unseren Routen' }, { value:'8', label:'Lkw' }, { value:'~1.200', label:'Sendungen pro Jahr' } ],
+legendHome: 'Slowenien',
+legendEu: 'EU / GB / Schweiz',
+legendOther: 'Westlicher Balkan',
+regionsTitle: 'Zonen, die wir befahren',
+regions: [
+{ title: 'Europäische Union', countries: 'alle 27 Mitgliedstaaten – von den Beneluxstaaten bis ins Baltikum, von Skandinavien bis zur Iberischen Halbinsel', text: 'Unsere häufigste Route. Keine Zollformalitäten innerhalb der EU – nur ein CMR-Frachtbrief und ein vereinbarter Ladetermin.' },
+{ title: 'Großbritannien', countries: 'England, Schottland, Wales', text: 'Transport in ein Drittland nach dem Brexit. Zollerklärung und Grenzdokumentation erledigen wir vor der Abfahrt des Fahrzeugs, nicht auf der Fähre.' },
+{ title: 'Schweiz', countries: 'das gesamte Gebiet der Schweizerischen Eidgenossenschaft', text: 'Zolltransit T1/T2, die Schwerverkehrsabgabe (LSVA) sowie Nacht- und Sonntagsfahrverbote für Lkw – alles bereits im Angebot einkalkuliert.' },
+{ title: 'Westlicher Balkan', countries: 'Serbien, Bosnien und Herzegowina, Nordmazedonien, Montenegro, Kosovo', text: 'CMR- und Transitdokumente sowie Kenntnis der Grenzübergänge (Šentilj, Gradiška, Horgoš) und der tatsächlichen Wartezeiten dort.' }
+],
+docsTitle: 'Dokumentation, die wir für Sie erledigen',
+docsIntro: 'Ein kurzes Glossar, falls Ihnen diese Begriffe zum ersten Mal begegnen.',
+docs: [
+{ term: 'CMR', desc: 'Internationaler Frachtbrief – belegt den Beförderungsvertrag und den Zustand der Ware bei Übernahme.' },
+{ term: 'T1 / T2', desc: 'Transitdokumente für Waren, die noch nicht verzollt sind (T1) bzw. aus der EU stammen (T2), beim Grenzübertritt mit einem Nicht-EU-Land.' },
+{ term: 'LSVA', desc: 'Die Schweizer Schwerverkehrsabgabe, abhängig von Gewicht und zurückgelegter Strecke.' },
+{ term: 'Zollerklärung', desc: 'Export-/Importerklärung für Waren, die die EU-Grenze überschreiten – z. B. auf dem Weg nach Großbritannien oder auf den Balkan.' }
+],
+concernsTitle: 'Worum wir uns kümmern, ohne dass Sie fragen müssen',
+concernsIntro: 'Wie ein guter Kaufmann prüfen wir das, was Sie beunruhigen könnte, noch bevor Sie fragen.',
+concerns: [
+{ q: 'Wer haftet, wenn etwas schiefgeht?', a: 'Für den internationalen Straßentransport gilt die CMR-Konvention – sie regelt klar die Haftung des Frachtführers für die Ladung von der Übernahme bis zur Zustellung.' },
+{ q: 'Ist die Ladung während der Fahrt sicher befestigt?', a: 'Vor jeder Fahrt prüft der Fahrer persönlich die Verladung und Ladungssicherung – das überlassen wir nicht dem Zufall oder der Eile.' },
+{ q: 'Woher weiß ich, wo sich meine Sendung befindet?', a: 'Wir versenden keine automatischen Benachrichtigungen – Sie rufen den Disponenten an oder schreiben ihm, er kennt Ihre Sendung und Sie erhalten noch am selben Tag eine persönliche Antwort.' },
+{ q: 'Was, wenn ein Fahrzeug ausfällt oder ein Fahrer erkrankt?', a: 'Mit 8 Fahrzeugen im eigenen Fuhrpark können wir schnell eine Ersatzlösung organisieren, ohne dass Ihnen dadurch zusätzliche Kosten entstehen.' },
+{ q: 'Entspricht der Endpreis wirklich dem Vereinbarten?', a: 'Maut, LSVA, Zollkosten und Dokumentation sind bereits vorab im Angebot enthalten – auf der Rechnung gibt es keine Überraschungen.' }
+],
+note: 'Sobald wir den Preis bestätigen, sind all diese Kosten und Verfahren bereits enthalten – ohne Überraschungen auf der Rechnung oder Verzögerungen an der Grenze.',
+cta: 'Fragen Sie nach Ihrer Route'
+},
+about: {
+title: 'Über uns',
+hook: 'Wenn die Ladung sich auf den Weg macht, reist unser Wort mit.',
+intro: 'Sie kennen diesen Moment: Die Ladung ist bereit, der Termin steht, die Papiere warten. Und die einzige Frage, die wirklich zählt, lautet: Kommt der Frachtführer dann, wann er es versprochen hat? Diese Frage beantworten wir seit 1991.',
+visionTitle: 'Vision',
+vision: 'Der erste Ansprechpartner jedes Spediteurs und Produktionsunternehmens zu werden, das einen zuverlässigen Straßentransport zwischen Slowenien und jedem beliebigen Punkt in der EU, Großbritannien, der Schweiz oder auf dem Balkan benötigt – mit eigenem Fuhrpark und einem stets erreichbaren Disponenten.',
+valuesTitle: 'Werte',
+values: [
+{ title: 'Persönliche Verantwortung', text: 'Jeder Transport trägt den Namen des Fahrers und die Telefonnummer des Disponenten – nicht nur eine Auftragsnummer.' },
+{ title: 'Pünktlichkeit ohne Ausnahme', text: 'Ein von uns bestätigter Termin ist ein Termin, den wir einhalten – oder wir rufen an, bevor Sie fragen müssen.' },
+{ title: 'Kenntnis von Grenzen und Dokumentation', text: 'CMR, T1/T2, LSVA und Zollverfahren sind geregelt, bevor das Fahrzeug die Grenze erreicht.' },
+{ title: 'Wachstum mit Menschen', text: 'Wir investieren in Fahrer und Technologie – TimoCom, digitaler Tachograf – nicht in Werbung.' }
+],
+timelineTitle: 'Ein Fahrzeug, ein Wort, drei Jahrzehnte',
+timeline: [
+{ year:'1991', text:'Branko Šauperl meldet in Benedikt in den Slowenischen Windischbergen ein Transportunternehmen an. Er beginnt mit einem Fahrzeug und einer einfachen Regel: Vereinbart ist vereinbart.' },
+{ year:'2015', text:'Aus dem Einzelunternehmen wird die Avtoprevozništvo Šauperl, trgovina in storitve d.o.o. Gleiche Familie, gleicher Ort, größere Verantwortung.' },
+{ year:'2017', text:'Wir eröffnen eine Betriebsstätte in der Industrijska cesta 5 in Benedikt und ergänzen unser Angebot um den Umschlag.' },
+{ year:'Heute', text:'Das Unternehmen wird von Sohn David Šauperl geführt. Branko Šauperl ist weiterhin eine große Stütze und beteiligt sich täglich an der Durchführung der Transporte.' }
+],
+whatTitle: 'Was wir tun',
+whatIntro: 'Wir sind spezialisiert auf den Straßentransport von Mobilheimen und anderer Ladung mit offenen Fahrzeugen und Planenfahrzeugen sowie auf den Umschlag. Wir transportieren nicht alles – wir transportieren das, was wir gut können.',
+what: [ 'Transporte von Mobilheimen, Ausrüstung und Materialien für Produktions- und Handelsunternehmen', 'Regelmäßige Linientransporte nach vereinbartem Zeitplan', 'Einzeltransporte auf Bestellung', 'Umschlag und Umladung' ],
+whereTitle: 'Wohin wir fahren',
+whereIntro: 'Unsere Fahrer fahren regelmäßig durch die Europäische Union, nach Großbritannien, in die Schweiz und auf die Märkte des westlichen Balkans – Serbien, Bosnien und Herzegowina, Nordmazedonien, Montenegro und Kosovo. Das bedeutet, Sie müssen sich nicht mit den Fragen befassen, mit denen wir uns befassen:',
+where: [
+{ title: 'Großbritannien', text: 'Transport in ein Drittland nach dem Brexit, mit Zolldokumentation, die wir im Voraus erledigen.' },
+{ title: 'Schweiz', text: 'Zollverfahren, Transit T1/T2, die Schwerverkehrsabgabe (LSVA) sowie Nacht- und Sonntagsfahrverbote – alles bereits im Zeitplan berücksichtigt, nicht erst an der Grenze geklärt.' },
+{ title: 'Westlicher Balkan', text: 'CMR, Transitdokumente und Kenntnis der Grenzübergänge und der tatsächlichen Wartezeiten.' }
+],
+whereNote: 'Sobald wir den Preis bestätigen, sind diese Kosten bereits enthalten – ohne nachträgliche Überraschungen auf der Rechnung.',
+stepsTitle: 'So läuft die Zusammenarbeit ab',
+steps: [
+{ n:'1', title:'Anfrage', text:'Sie senden uns Route, Ladung und einen groben Termin.' },
+{ n:'2', title:'Angebot', text:'Wir antworten mit einem klaren Preis und Datum – in der Regel noch am selben Arbeitstag.' },
+{ n:'3', title:'Durchführung', text:'Wir stellen Fahrzeug und Fahrer. Ein Ansprechpartner für den gesamten Transport.' },
+{ n:'4', title:'Dokumentation', text:'CMR und Übernahmedokumente sind bereit, die Rechnung kommt mit dem Transport.' }
+],
+quote: 'Wenn die Ladung sich auf den Weg macht, reist unser Wort mit.',
+quoteAuthor: 'David Šauperl, Geschäftsführer',
+teamTitle: 'Menschen am Steuer und am Telefon',
+teamIntro: 'Wir sind ein kleines Unternehmen. Das ist keine Einschränkung – das ist der Grund, warum wir Sie kennen. Bei uns bekommen Sie kein Callcenter, sondern einen Menschen, der sich an Ihren letzten Transport erinnert.',
+team: [ { count:'David Šauperl', role:'Geschäftsführer' }, { count:'Branko Šauperl', role:'Gründer' }, { count:'Disponentin', role:'Ihr Ansprechpartner für Routen' }, { count:'9 Fahrer', role:'Internationale Routen' } ],
+forwardTitle: 'Wohin wir uns entwickeln',
+forward: 'David Šauperl setzt sich aktiv für Wachstum ein: Er sucht neue zuverlässige Fahrer und neue Geschäftskunden und modernisiert und automatisiert gleichzeitig schrittweise den Betrieb – von der Ladungsausschreibung auf TimoCom bis zu digitalen Tachographenaufzeichnungen –, damit wir persönlich bleiben und technologisch auf dem neuesten Stand sind.',
+numbersTitle: 'Ein paar Zahlen statt Adjektive',
+numbers: [
+{ label:'Gründungsjahr', value:'1991' },
+{ label:'Umwandlung in eine d.o.o. (GmbH)', value:'2015' },
+{ label:'Fuhrpark', value:'8 Fahrzeuge' },
+{ label:'Sendungen pro Jahr', value:'ca. 1.200' },
+{ label:'Sitz', value:'Strma ulica 18, 2234 Benedikt' },
+{ label:'Betriebsstätte', value:'Industrijska cesta 5, 2234 Benedikt' },
+{ label:'Handelsregisternummer', value:'6809545000' },
+{ label:'USt-IdNr.', value:'SI 35507233' }
+],
+closing: 'Wenn Sie das nächste Mal einen Warenversand planen, haben Sie zwei Möglichkeiten. Sie können immer wieder prüfen, wo sich die Ladung befindet, und hoffen, dass der Termin hält. Oder Sie rufen jemanden an, der Ihnen das von sich aus sagt, noch bevor Sie fragen.',
+closingCta: 'Anfrage senden'
+},
+careers: {
+title: 'Fahrer, die wir beim Namen nennen – nicht bei der Fahrzeugnummer.',
+intro: 'Suchen Sie eine Stelle, bei der der Disponent Sie beim Namen kennt? Wir suchen laufend erfahrene Fahrer für den internationalen Straßentransport – werden Sie Teil eines Teams, das bewusst klein und persönlich bleibt.',
+why: [
+{ title: 'Ein Disponent, kein App-Fahrplan', text: 'Die Routen weist Ihnen persönlich unsere Disponentin zu – kein Algorithmus. Gibt es ein Problem, rufen Sie einen Menschen an, der es tatsächlich lösen kann.' },
+{ title: 'Abwechslungsreiche Routen', text: 'EU, Großbritannien, Schweiz und westlicher Balkan – Sie fahren nicht Monat für Monat dieselbe Strecke im Kreis.' },
+{ title: 'Moderner Fuhrpark', text: '8 Lkw mit offenen Plattformen und Planenaufbauten, digitale Tachographenkarte, Ladungsausschreibung über TimoCom.' },
+{ title: 'Familienunternehmen, kein Konzern', text: 'David und Branko Šauperl sind direkt erreichbar – Entscheidungen werden am selben Tag getroffen, nicht über drei Abteilungen hinweg.' }
+],
+quote: 'Jeder Fahrer ist für uns das Gesicht des Unternehmens auf der Straße – deshalb investieren wir in Menschen, nicht in Werbung.',
+quoteAuthor: 'David Šauperl, Geschäftsführer',
+processTitle: 'So läuft die Bewerbung ab',
+process: [
+{ n:'1', title:'Sie bewerben sich', text:'Füllen Sie das untenstehende Formular aus oder senden Sie Ihren Lebenslauf an sautrans@gmail.com.' },
+{ n:'2', title:'Wir rufen Sie persönlich an', text:'David oder die Disponentin – nicht die Personalabteilung, kein Vermittler.' },
+{ n:'3', title:'Wir vereinbaren die Routen', text:'Gemeinsam stimmen wir ab, welche Strecken und welcher Zeitplan am besten zu Ihnen passen.' }
+],
+interviewTitle: 'So läuft unser Vorstellungsgespräch ab',
+interviewIntro: 'Wir wissen, dass ein Stellenwechsel stressig sein kann. Deshalb ist unser Gespräch ein Gespräch, kein Verhör.',
+interview: [
+'Es dauert 30–45 Minuten – genug, um sich kennenzulernen, nicht so viel, dass es Ihnen den ganzen Nachmittag raubt.',
+'Sie sitzen David oder der Disponentin gegenüber – nicht vor einer fünfköpfigen Kommission.',
+'Sie können alles fragen: zu Bezahlung, Routen, Ruhezeiten zu Hause, den Fahrzeugen – wir antworten direkt, ohne auszuweichen.',
+'Sie erhalten innerhalb weniger Tage eine Antwort, persönlich per Telefon – von David oder der Disponentin, nicht per E-Mail von der Personalabteilung.',
+'Sie können in Arbeitskleidung kommen – wir erwarten keinen Anzug.'
+],
+offerTitle: 'Was wir bieten',
+offer: [ 'Feste Routen in die EU, nach Großbritannien, in die Schweiz und auf den Balkan', 'Moderner Fuhrpark', 'Direkte Absprache mit dem Disponenten, ohne Bürokratie', 'Stabile, langfristige Beschäftigung in einem Familienunternehmen' ],
+reqTitle: 'Voraussetzungen',
+req: [ 'Führerschein der Klasse C+E', 'Schlüsselzahl 95', 'Digitale Tachographenkarte', 'Erfahrung im internationalen Transport von Vorteil' ],
+formTitle: 'Bewerbung',
+fName:'Vor- und Nachname', fPhone:'Telefon', fEmail:'E-Mail', fExp:'Erfahrung', fCv:'Lebenslauf anhängen',
+consentLabel: 'Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zweck des Bewerbungsverfahrens gemäß der',
+consentLink: 'Datenschutzerklärung',
+submit: 'Bewerbung senden',
+sending: 'Wird gesendet …',
+success: 'Vielen Dank für Ihre Bewerbung! Wir melden uns schnellstmöglich bei Ihnen.',
+endpointNote: 'Ihre Bewerbung wird direkt per E-Mail an David Šauperl übermittelt.'
+},
+contact: {
+title: 'Kontakt',
+intro: 'Sagen Sie uns, von wo nach wo Sie Ihre Ladung transportieren – der Disponent antwortet Ihnen persönlich, kein Callcenter. Für dringende Fälle schreiben Sie direkt an sautrans@gmail.com.',
+fName:'Vor- und Nachname', fCompany:'Unternehmen', fEmail:'E-Mail', fPhone:'Telefon',
+fRoute:'Route (von–nach)', fRoutePh:'z. B. Maribor – Rotterdam', fCargo:'Art der Ladung', fMsg:'Nachricht',
+consentLabel: 'Ich stimme der Verarbeitung meiner personenbezogenen Daten zum Zweck der Bearbeitung dieser Anfrage gemäß der',
+consentLink: 'Datenschutzerklärung',
+submit: 'Anfrage senden',
+sending: 'Wird gesendet …',
+success: 'Vielen Dank für Ihre Anfrage! Der Disponent wird sich schnellstmöglich bei Ihnen melden.',
+endpointNote: 'Ihre Nachricht wird direkt per E-Mail an den Disponenten übermittelt.',
+dispatchTitle: 'Disponent', dispatchRole: 'Ihr Ansprechpartner für Routen und Disposition',
+phoneLabel: 'Telefon', mobileLabel: 'Mobil', vatLabel: 'USt-IdNr.', bankLabel: 'Bank',
+seatNote: 'Sitz des Unternehmens: Strma ulica 18, 2234 Benedikt.',
+officeTitle: 'Büro',
+mapPlaceholder: '[PLATZHALTER: Standortkarte]'
+},
+legal: {
+privacyTitle: 'Datenschutzerklärung',
+privacyBody: [
+'Verantwortlicher für die Verarbeitung personenbezogener Daten ist die Avtoprevozništvo Šauperl, trgovina in storitve d.o.o., Strma ulica 18, SI-2234 Benedikt, Handelsregisternummer 6809545000, USt-IdNr. SI35507233 („Verantwortlicher“). Bei Fragen zum Datenschutz kontaktieren Sie uns unter sautrans@gmail.com.',
+'Daten aus dem Kontaktformular (Name, Unternehmen, E-Mail, Telefon, Route, Art der Ladung, Nachricht) verarbeiten wir auf Grundlage Ihrer Einwilligung bzw. zur Durchführung vorvertraglicher Maßnahmen (Art. 6 Abs. 1 lit. a und b DSGVO), ausschließlich zur Bearbeitung und Beantwortung Ihrer Anfrage.',
+'Daten aus dem Bewerbungsformular (Name, Telefon, E-Mail, Erfahrung, Lebenslauf) verarbeiten wir auf Grundlage Ihrer Einwilligung, ausschließlich zum Zweck der Durchführung des Bewerbungsverfahrens.',
+'Daten aus dem Kontaktformular speichern wir höchstens 12 Monate ab Eingang der Anfrage, sofern sich daraus keine Geschäftsbeziehung ergibt. Daten aus Bewerbungen speichern wir höchstens 6 Monate nach Abschluss des Auswahlverfahrens, sofern der Bewerber nicht ausdrücklich einer längeren Speicherung für mögliche zukünftige Beschäftigungen zustimmt.',
+'Wir geben Ihre Daten nicht an Dritte weiter, außer an Dienstleister (z. B. Hostinganbieter der Website, E-Mail-Dienstanbieter), die diese in unserem Auftrag und ausschließlich nach unseren Weisungen verarbeiten.',
+'Nach der DSGVO haben Sie das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit Ihrer Daten. Einen entsprechenden Antrag können Sie jederzeit an sautrans@gmail.com richten; wir antworten unverzüglich, spätestens jedoch innerhalb eines Monats.',
+'Wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer Daten gegen die DSGVO verstößt, haben Sie das Recht, sich bei der Informationsbeauftragten der Republik Slowenien zu beschweren (Dunajska cesta 22, 1000 Ljubljana, gp.ip@ip-rs.si).',
+'Wir können diese Richtlinie von Zeit zu Zeit aktualisieren.'
+]
+},
+legalCookies: {},
+_dummy:null
+}
+};
+
+
+const COOKIE_T = {
+sl: { text: 'Uporabljamo piškotke za osnovno delovanje strani. Analitika se naloži šele po vaši privolitvi.', more: 'Več o piškotkih', accept: 'Sprejmi', reject: 'Zavrni' },
+en: { text: 'We use cookies for the basic operation of the site. Analytics loads only after your consent.', more: 'More about cookies', accept: 'Accept', reject: 'Reject' },
+de: { text: 'Wir verwenden Cookies für den grundlegenden Betrieb der Website. Analytik wird erst nach Ihrer Zustimmung geladen.', more: 'Mehr über Cookies', accept: 'Akzeptieren', reject: 'Ablehnen' }
+};
+const COOKIES_PAGE_T = {
+sl: { cookiesTitle: 'Piškotki', cookiesBody: [
+'Piškotki so majhne besedilne datoteke, ki jih spletna stran shrani v vaš brskalnik, da si zapomni vaše nastavitve in omogoči osnovno delovanje strani.',
+'Nujno potrebni piškotki: omogočajo osnovno delovanje strani (izbira jezika, zapomnitev vaše odločitve glede piškotkov). Ti se naložijo samodejno; zanje po zakonu soglasje ni potrebno.',
+'Analitični piškotki: uporabili bi jih za anonimno spremljanje obiskanosti. Naložimo jih šele, ko to izrecno potrdite v pasici s piškotki; uporabljamo Vercel Analytics, ki ne uporablja piškotkov za sledenje posameznim obiskovalcem.',
+'Svojo privolitev lahko kadarkoli umaknete ali spremenite tako, da izbrišete piškotke te strani v nastavitvah brskalnika in stran znova naložite.',
+'Vprašanja glede piškotkov lahko naslovite na sautrans@gmail.com.'
+]},
+en: { cookiesTitle: 'Cookies', cookiesBody: [
+'Cookies are small text files that a website stores in your browser to remember your settings and enable the basic operation of the site.',
+'Strictly necessary cookies: enable the basic operation of the site (language choice, remembering your cookie decision). These load automatically; consent is not legally required for them.',
+'Analytics cookies: would be used to anonymously track visits. We only load these once you explicitly confirm in the cookie banner; we use Vercel Analytics, which does not use cookies to track individual visitors.',
+'You can withdraw or change your consent at any time by deleting this site’s cookies in your browser settings and reloading the page.',
+'Questions about cookies can be sent to sautrans@gmail.com.'
+]},
+de: { cookiesTitle: 'Cookies', cookiesBody: [
+'Cookies sind kleine Textdateien, die eine Website in Ihrem Browser speichert, um Ihre Einstellungen zu merken und den grundlegenden Betrieb der Seite zu ermöglichen.',
+'Unbedingt erforderliche Cookies: ermöglichen den grundlegenden Betrieb der Seite (Sprachwahl, Speicherung Ihrer Cookie-Entscheidung). Diese werden automatisch geladen; dafür ist gesetzlich keine Einwilligung erforderlich.',
+'Analyse-Cookies: würden zur anonymen Erfassung von Besuchen verwendet. Wir laden diese erst, wenn Sie dies im Cookie-Banner ausdrücklich bestätigen; wir verwenden Vercel Analytics, das keine Cookies zur Verfolgung einzelner Besucher einsetzt.',
+'Sie können Ihre Einwilligung jederzeit widerrufen oder ändern, indem Sie die Cookies dieser Website in Ihren Browsereinstellungen löschen und die Seite neu laden.',
+'Fragen zu Cookies richten Sie bitte an sautrans@gmail.com.'
+]}
+};
+const TERMS_T = {
+sl: { termsTitle: 'Splošni pogoji', termsBody: [
+'Ti splošni pogoji urejajo razmerje med naročnikom prevoza in Avtoprevozništvo Šauperl, trgovina in storitve d.o.o., Strma ulica 18, SI-2234 Benedikt, matična številka 6809545000, ID za DDV SI35507233.',
+'Naročilo prevoza je sklenjeno, ko naročnik in prevoznik pisno (po e-pošti ali preko obrazca na tej strani) potrdita relacijo, vrsto tovora in ceno prevoza.',
+'Za izvedbo mednarodnega cestnega prevoza blaga se uporabljajo določila Konvencije o pogodbi za mednarodni cestni prevoz blaga (CMR), ki med drugim urejajo odgovornost prevoznika, roke za reklamacije in omejitve odškodninske odgovornosti.',
+'Cena prevoza se dogovori posamično za vsako naročilo glede na relacijo, vrsto in težo tovora ter razpoložljivost voznega parka. Plačilni rok je 30 dni od izstavitve računa, razen če je za posamezno naročilo dogovorjeno drugače.',
+'Prevoznik ne odgovarja za zamude ali škodo, nastalo zaradi višje sile, ravnanja naročnika ali tretjih oseb, ali okoliščin, ki jih po skrbnosti dobrega gospodarja ni mogel preprečiti.',
+'Reklamacije glede vidnih poškodb ali delne izgube tovora je treba pisno uveljavljati najkasneje ob prevzemu blaga; za skrite napake veljajo roki iz Konvencije CMR.',
+'Pogodbeni stranki bosta morebitne spore poskušali rešiti sporazumno; če to ne bo mogoče, je pristojno Okrožno sodišče v Mariboru. Uporablja se pravo Republike Slovenije.',
+'Ti pogoji veljajo od 3. avgusta 2026.'
+]},
+en: { termsTitle: 'Terms & Conditions', termsBody: [
+'These terms and conditions govern the relationship between the transport customer and Avtoprevozništvo Šauperl, trgovina in storitve d.o.o., Strma ulica 18, SI-2234 Benedikt, company registration number 6809545000, VAT ID SI35507233.',
+'A transport order is concluded once the customer and carrier confirm the route, type of cargo and transport price in writing (by e-mail or via the form on this site).',
+'The provisions of the Convention on the Contract for the International Carriage of Goods by Road (CMR) apply to the performance of international road haulage, governing among other things the carrier’s liability, claim deadlines and limitations of liability for damages.',
+'The transport price is agreed individually for each order depending on the route, type and weight of cargo, and fleet availability. The payment term is 30 days from the invoice date, unless otherwise agreed for a specific order.',
+'The carrier is not liable for delays or damage caused by force majeure, actions of the customer or third parties, or circumstances that could not have been prevented with the diligence of a prudent operator.',
+'Claims regarding visible damage or partial loss of cargo must be made in writing at the latest upon receipt of the goods; the deadlines set out in the CMR Convention apply to hidden defects.',
+'The parties will attempt to resolve any disputes amicably; if this is not possible, the District Court in Maribor has jurisdiction. The law of the Republic of Slovenia applies.',
+'These terms apply from 3 August 2026.'
+]},
+de: { termsTitle: 'Allgemeine Geschäftsbedingungen', termsBody: [
+'Diese Allgemeinen Geschäftsbedingungen regeln das Verhältnis zwischen dem Transportauftraggeber und Avtoprevozništvo Šauperl, trgovina in storitve d.o.o., Strma ulica 18, SI-2234 Benedikt, Handelsregisternummer 6809545000, USt-IdNr. SI35507233.',
+'Ein Transportauftrag kommt zustande, sobald Auftraggeber und Frachtführer Strecke, Ladungsart und Transportpreis schriftlich (per E-Mail oder über das Formular auf dieser Website) bestätigen.',
+'Für die Durchführung des grenzüberschreitenden Straßengüterverkehrs gelten die Bestimmungen des Übereinkommens über den Beförderungsvertrag im internationalen Straßengüterverkehr (CMR), die unter anderem die Haftung des Frachtführers, Reklamationsfristen und Haftungsbeschränkungen regeln.',
+'Der Transportpreis wird für jeden Auftrag individuell nach Strecke, Art und Gewicht der Ladung sowie Verfügbarkeit des Fuhrparks vereinbart. Die Zahlungsfrist beträgt 30 Tage ab Rechnungsdatum, sofern für den jeweiligen Auftrag nichts anderes vereinbart ist.',
+'Der Frachtführer haftet nicht für Verzögerungen oder Schäden infolge höherer Gewalt, Handlungen des Auftraggebers oder Dritter oder Umstände, die er mit der Sorgfalt eines ordentlichen Kaufmanns nicht abwenden konnte.',
+'Reklamationen wegen sichtbarer Beschädigung oder teilweisen Verlusts der Ladung sind spätestens bei Übernahme der Ware schriftlich geltend zu machen; für versteckte Mängel gelten die Fristen des CMR-Übereinkommens.',
+'Die Vertragsparteien werden etwaige Streitigkeiten einvernehmlich zu lösen versuchen; andernfalls ist das Bezirksgericht Maribor zuständig. Es gilt das Recht der Republik Slowenien.',
+'Diese Bedingungen gelten ab dem 3. August 2026.'
+]}
+};
+
+class Component extends DCLogic {
+state = {
+lang: 'sl',
+page: (typeof window !== 'undefined' && ['home','services','fleet','coverage','about','careers','contact'].includes((window.location.hash||'').slice(1))) ? window.location.hash.slice(1) : 'home',
+menuOpen: false,
+cookieVisible: (typeof localStorage !== 'undefined' && localStorage.getItem('sauperl_cookie_consent')) ? false : true,
+cForm: { ime:'', podjetje:'', eposta:'', telefon:'', relacija:'', tovor:'', sporocilo:'', gotcha:'', soglasje:false },
+cError: '', contactSubmitted: false, contactSending: false,
+kForm: { ime:'', telefon:'', eposta:'', izkusnje:'', gotcha:'', soglasje:false },
+kError: '', careerSubmitted: false, careerSending: false, kCvName: '', kCvFile: null
+};
+
+go = (page) => { this.setState({ page, menuOpen: false }); if (typeof window !== 'undefined') { window.scrollTo(0,0); try { window.history.replaceState(null, '', '#' + page); } catch(e) {} } };
+setLang = (lang) => this.setState({ lang });
+toggleMenu = () => this.setState(s => ({ menuOpen: !s.menuOpen }));
+acceptCookies = () => { if (typeof localStorage !== 'undefined') localStorage.setItem('sauperl_cookie_consent','accepted'); this.setState({ cookieVisible: false }); this.loadAnalytics(); };
+rejectCookies = () => { if (typeof localStorage !== 'undefined') localStorage.setItem('sauperl_cookie_consent','rejected'); this.setState({ cookieVisible: false }); };
+
+loadAnalytics = () => {
+if (typeof document === 'undefined' || document.getElementById('vercel-analytics-script')) return;
+const s = document.createElement('script');
+s.id = 'vercel-analytics-script';
+s.defer = true;
+s.src = '/_vercel/insights/script.js';
+s.onerror = () => {}; // no-op outside a Vercel deployment (e.g. previews)
+document.head.appendChild(s);
+};
+
+componentDidMount() {
+if (typeof localStorage !== 'undefined' && localStorage.getItem('sauperl_cookie_consent') === 'accepted') this.loadAnalytics();
+}
+
+onContactChange = (e) => { const { name, value, type, checked } = e.target; this.setState(s => ({ cForm: { ...s.cForm, [name]: type === 'checkbox' ? checked : value } })); };
+onContactSubmit = (e) => {
+e.preventDefault();
+const f = this.state.cForm;
+if (f.gotcha) return;
+if (!f.ime || !f.eposta || !f.sporocilo) { this.setState({ cError: this.reqMsg() }); return; }
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.eposta)) { this.setState({ cError: this.emailMsg() }); return; }
+if (!f.soglasje) { this.setState({ cError: this.consentMsg() }); return; }
+this.setState({ cError: '', contactSending: true });
+fetch('/api/contact', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify(f)
+}).then(res => {
+if (!res.ok) throw new Error('send failed');
+this.setState({ cError: '', contactSending: false, contactSubmitted: true });
+}).catch(() => {
+this.setState({ cError: this.sendErrorMsg(), contactSending: false });
+});
+};
+
+onCareerChange = (e) => { const { name, value, type, checked } = e.target; this.setState(s => ({ kForm: { ...s.kForm, [name]: type === 'checkbox' ? checked : value } })); };
+onCvChange = (e) => { const file = e.target.files && e.target.files[0]; this.setState({ kCvName: file ? file.name : '', kCvFile: file || null }); };
+readFileAsBase64 = (file) => new Promise((resolve, reject) => {
+const reader = new FileReader();
+reader.onload = () => resolve(String(reader.result).split(',').pop());
+reader.onerror = reject;
+reader.readAsDataURL(file);
+});
+onCareerSubmit = (e) => {
+e.preventDefault();
+const f = this.state.kForm;
+if (f.gotcha) return;
+if (!f.ime || !f.telefon || !f.eposta) { this.setState({ kError: this.reqMsg() }); return; }
+if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.eposta)) { this.setState({ kError: this.emailMsg() }); return; }
+if (!f.soglasje) { this.setState({ kError: this.consentMsg() }); return; }
+this.setState({ kError: '', careerSending: true });
+const cvFile = this.state.kCvFile;
+(cvFile ? this.readFileAsBase64(cvFile) : Promise.resolve(null)).then(cvBase64 => {
+return fetch('/api/career', {
+method: 'POST',
+headers: { 'Content-Type': 'application/json' },
+body: JSON.stringify({ ...f, cvFilename: cvFile ? cvFile.name : '', cvBase64 })
+});
+}).then(res => {
+if (!res.ok) throw new Error('send failed');
+this.setState({ kError: '', careerSending: false, careerSubmitted: true });
+}).catch(() => {
+this.setState({ kError: this.sendErrorMsg(), careerSending: false });
+});
+};
+
+reqMsg = () => ({ sl:'Prosimo, izpolnite obvezna polja.', en:'Please fill in the required fields.', de:'Bitte füllen Sie die Pflichtfelder aus.' }[this.state.lang]);
+emailMsg = () => ({ sl:'Prosimo, vnesite veljaven e-poštni naslov.', en:'Please enter a valid email address.', de:'Bitte geben Sie eine gültige E-Mail-Adresse ein.' }[this.state.lang]);
+consentMsg = () => ({ sl:'Prosimo, potrdite strinjanje z obdelavo osebnih podatkov.', en:'Please confirm your consent to the processing of personal data.', de:'Bitte bestätigen Sie Ihre Einwilligung zur Verarbeitung personenbezogener Daten.' }[this.state.lang]);
+sendErrorMsg = () => ({ sl:'Prišlo je do napake pri pošiljanju. Poskusite znova ali pišite na sautrans@gmail.com.', en:'There was an error sending your message. Please try again or write to sautrans@gmail.com.', de:'Beim Senden ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut oder schreiben Sie an sautrans@gmail.com.' }[this.state.lang]);
+
+renderVals() {
+const { lang, page, menuOpen, cookieVisible, cForm, cError, contactSubmitted, contactSending, kForm, kError, careerSubmitted, careerSending, kCvName } = this.state;
+const T = { ...DATA[lang], cookie: COOKIE_T[lang], footer: {
+legalName: 'Avtoprevozništvo Šauperl, trgovina in storitve d.o.o.',
+navTitle: { sl:'Navigacija', en:'Navigation', de:'Navigation' }[lang],
+legalTitle: { sl:'Pravno', en:'Legal', de:'Rechtliches' }[lang],
+contactTitle: { sl:'Kontakt', en:'Contact', de:'Kontakt' }[lang],
+legalPrivacy: { sl:'Politika zasebnosti', en:'Privacy Policy', de:'Datenschutz' }[lang],
+legalCookies: { sl:'Piškotki', en:'Cookies', de:'Cookies' }[lang],
+legalTerms: { sl:'Splošni pogoji', en:'Terms & Conditions', de:'AGB' }[lang],
+employeeLogin: { sl:'Prijava za zaposlene (kmalu z vami)', en:'Employee login (coming soon)', de:'Mitarbeiter-Login (bald verfügbar)' }[lang],
+rights: { sl:'Vse pravice pridržane.', en:'All rights reserved.', de:'Alle Rechte vorbehalten.' }[lang]
+} };
+T.legal = { ...T.legal, ...COOKIES_PAGE_T[lang], ...TERMS_T[lang] };
+
+const navItems = NAV_VISIBLE.map(key => ({ key, label: T.nav[key], current: page === key ? 'page' : undefined, color: page === key ? '#1e8e4f' : '#f5f1ec', underline: page === key ? '#1e8e4f' : 'transparent', onClick: () => this.go(key) }));
+const footerNavItems = NAV_VISIBLE.map(key => ({ key, label: T.nav[key], onClick: () => this.go(key) }));
+const langItems = ['sl','en','de'].map(key => ({ key, label: key.toUpperCase(), active: lang === key, bg: lang === key ? '#1e8e4f' : 'transparent', color: lang === key ? '#fff' : '#c9c3ba', onClick: () => this.setLang(key) }));
+
+const fleetPlaceholderLabel = { sl:'fotografija tovornjaka', en:'truck photo', de:'Lkw-Foto' }[lang];
+const FLEET_PHOTOS = [];
+const fleetTrucks = Array.from({ length: 8 }, (_, i) => ({ label: `#${i+1}`, placeholder: `[${fleetPlaceholderLabel} ${i+1}]`, photo: FLEET_PHOTOS[i] || null }));
+
+return {
+T, lang, page, menuOpen, cookieVisible, year: new Date().getFullYear(),
+navItems, footerNavItems, langItems, fleetTrucks, aboutFleetPhotos: FLEET_PHOTOS,
+go: this.go, setLang: this.setLang, toggleMenu: this.toggleMenu,
+goHome: () => this.go('home'), goContact: () => this.go('contact'), goServices: () => this.go('services'),
+goCoverage: () => this.go('coverage'), goPrivacy: () => this.go('privacy'), goCookiesPage: () => this.go('cookiesPage'),
+goTerms: () => this.go('terms'),
+acceptCookies: this.acceptCookies, rejectCookies: this.rejectCookies,
+isHome: page==='home', isServices: page==='services', isFleet: page==='fleet',
+isCoverage: page==='coverage', isAbout: page==='about', isCareers: page==='careers',
+isContact: page==='contact', isPrivacy: page==='privacy', isCookiesPage: page==='cookiesPage', isTerms: page==='terms',
+cForm, cError, contactSubmitted, contactSending, contactFormVisible: !contactSubmitted,
+contactSubmitLabel: contactSending ? T.contact.sending : T.contact.submit,
+onContactChange: this.onContactChange, onContactSubmit: this.onContactSubmit,
+kForm, kError, careerSubmitted, careerSending, careerFormVisible: !careerSubmitted, kCvName,
+careerSubmitLabel: careerSending ? T.careers.sending : T.careers.submit,
+onCareerChange: this.onCareerChange, onCareerSubmit: this.onCareerSubmit, onCvChange: this.onCvChange
+};
+}
+}
+
+</script>
+
+</body></html>
