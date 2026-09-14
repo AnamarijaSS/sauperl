@@ -47,7 +47,7 @@ headers: {
 'Content-Type': 'application/json'
 },
 body: JSON.stringify({
-from: 'Šauperl spletna stran <onboarding@resend.dev>',
+from: 'Šauperl spletna stran <info@sauperl.com>',
 to: ['sautrans@gmail.com'],
 reply_to: eposta,
 subject: `Povpraševanje s spletne strani – ${ime}`,
