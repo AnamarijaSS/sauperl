@@ -38,7 +38,7 @@ cvFilename ? `Priložen CV: ${cvFilename}` : null,
 ].filter(Boolean).join('\n');
 
 const payload = {
-from: 'Šauperl spletna stran <onboarding@resend.dev>',
+from: 'Šauperl spletna stran <info@sauperl.com>',
 to: ['info@sauperl.com'],
 reply_to: eposta,
 subject: `Prijava za zaposlitev – ${ime}`,
