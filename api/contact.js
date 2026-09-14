@@ -48,7 +48,7 @@ headers: {
 },
 body: JSON.stringify({
 from: 'Šauperl spletna stran <info@sauperl.com>',
-to: ['sautrans@gmail.com'],
+to: ['info@sauperl.com'],
 reply_to: eposta,
 subject: `Povpraševanje s spletne strani – ${ime}`,
 text: lines
